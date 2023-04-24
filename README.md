@@ -1,0 +1,18 @@
+# ChatBot_DuLich
+ChatBot tư vấn hỗ trợ du lịch
+
+Tải về giải nén ra thì xóa file.rasa/cache đi cũng được
+
+Xong thì mở CMD trong thư mục đó lun
+![image](https://user-images.githubusercontent.com/85334608/233958478-4f08ad30-1dd8-4a77-8c56-b8ec3fea0899.png)
+
+- Ghi lệnh: 
+rasa train
+- Chạy xong train thì ghi lệnh
+rasa run --cors "*"
+![image](https://user-images.githubusercontent.com/85334608/233959069-0e173a58-237d-406f-ad74-4c5ab228fd38.png)
+
+- Mở tiếp 1 cmd trong thư mục đó ghi lệnh
+rasa run actions --actions actions
+
+Xong mở file Web3.html là oke test
