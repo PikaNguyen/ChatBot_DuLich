@@ -1,23 +1,59 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Rasa ChatBot UI</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  </head>
-  <body>
-    <h1>Rasa ChatBot UI</h1>
-    <div id="rasa-chat-widget"
-         data-endpoint="http://localhost:5005"
-         data-conversation-id="my-conversation-id"
-         data-socket-url="http://localhost:5005/socket.io/"
-         data-title="My Chatbot"
-         data-params='{"storage": "session"}'
-         data-embed-button="true"
-         data-hide-input="false"
-         data-initial-message='{"text":"Hello! How can I help you?","buttons":[{"title":"The famous tourist destination in Da Lat is Xuan Huong Lake","payload":"/more_info_xuan_huong_lake"}]}'
-    >
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/@rasahq/rasa-chat@1.3.4/dist/index.js"></script>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<s>
+  <script>!(function () {
+      let e = document.createElement("script"),
+        t = document.head || document.getElementsByTagName("head")[0];
+      (e.src =
+        "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+        // Replace 1.x.x with the version that you want
+        (e.async = !0),
+        (e.onload = () => {
+          window.WebChat.default(
+            {
+              initPayload: '/greet',
+              customData: { language: "en" },
+              socketUrl: "http://localhost:5005",
+              title: "ChatBot Hỗ trợ Du lịch",
+              profileAvatar: "https://cdn-icons-png.flaticon.com/512/1698/1698535.png"
+
+              // add other props here
+            },
+            null
+          );
+        }),
+        t.insertBefore(e, t.firstChild);
+    })();
+  </script>
+
+  <style>
+    .rw-conversation-container .rw-header {
+      background-color: #0080d5;
+    }
+
+    .rw-conversation-container .rw-header .rw-title {
+      background-color: #0080d5;
+    }
+
+    .rw-conversation-container .rw-client {
+      background-color: #0080d5 !important;
+    }
+
+    .conversation-container close-button {
+      background-color: #0080d5;
+    }
+
+    .rw-launcher {
+      background-color: #0080d5;
+    }
+  </style>
+
   </body>
+
 </html>
