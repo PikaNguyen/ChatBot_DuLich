@@ -67,7 +67,7 @@ responses:
       payload: "/dia_diem_an_uong"
 
   utter_destination_generic:
-  - text: "Đà Lạt có các địa điểm du lịch nổi tiếng như sau:\n Thung lũng tình yêu, Vườn hoa thành phố, Hồ Xuân Hương"
+  - text: "Đà Lạt có rất nhiều địa điểm du lịch nổi tiếng"
     buttons:
     - title: "Thung lũng tình yêu"
       payload: "/thung_lung_tinh_yeu"
@@ -97,23 +97,6 @@ responses:
 actions: 
  - action_more_info_xuan_huong_lake
 
-#  utter_hint:
-#  - text: "Xin chào, tôi có thể tư vấn về du lịch Đà Lạt !"
-#    buttons:
-#    - title: "Các địa điểm du lịch nổi tiếng"
-#      payload: "/hint_touristInfo"
-#    - title: "Các địa điểm ăn uống"
-#      payload: "/hint_foodInfo"
-#
-#  utter_locations:
-#    - text: "Dưới đây là danh sách các địa điểm du lịch nổi tiếng ở Đà Lạt:"
-#      buttons:
-#        - title: "Thác Pongour"
-#          payload: "/location_info{location: Thác Pongour}"
-#        - title: "Hồ Xuân Hương"
-#          payload: "/location_info{location: Hồ Xuân Hương}"
-#        - title: "Thung lũng Tình Yêu"
-#          payload: "/location_info{location: Thung lũng Tình Yêu}"
 
 
 
