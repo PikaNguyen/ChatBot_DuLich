@@ -39,6 +39,6 @@ class ActionMoreInfoXuanHuongLake(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         # send some more information about Xuan Huong Lake
-        dispatcher.utter_message(text="Xuan Huong Lake is a beautiful lake located in the heart of Da Lat. It is a popular spot for tourists and locals alike, offering a peaceful atmosphere and stunning views. If you have any more questions, feel free to ask!")
+        dispatcher.utter_message(text="Hồ Xuân Hương là một hồ nước xinh đẹp nằm giữa lòng Đà Lạt. Đây là một địa điểm nổi tiếng đối với khách du lịch cũng như người dân địa phương, mang đến một bầu không khí yên bình và cảnh quan tuyệt đẹp.")
         
         return []

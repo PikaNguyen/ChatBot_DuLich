@@ -27,7 +27,22 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: show tourist destination
+- rule: Xem thông tin Hồ Xuân Hương
   steps:
   - intent: more_info_xuan_huong_lake
   - action: action_more_info_xuan_huong_lake
+
+- rule: Xem thông tin Vườn hoa thành phố
+  steps:
+  - intent: vuon_hoa_thanh_pho
+  - action: utter_vuon_hoa
+
+- rule: Xem thông tin Thung lũng tình yêu
+  steps:
+  - intent: thung_lung_tinh_yeu
+  - action: utter_thung_lung
+
+- rule: Chọn thời gian
+  steps:
+  - intent: dia_diem_an_uong
+  - action: utter_food_time

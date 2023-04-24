@@ -10,12 +10,22 @@ intents:
 - mood_great
 - genericInfo
 - more_info_xuan_huong_lake
+- what_do_you_have
+- dia_diem_du_lich
+- dia_diem_an_uong
+- thung_lung_tinh_yeu
+- vuon_hoa_thanh_pho
+- buoi_sang
+- buoi_trua
+- buoi_toi
+- chon_dia_diem_du_lich
+- chon_lai
 
 responses:
   utter_greet:
   - text: "Xin chào! Tôi có thể giúp gì cho bạn?"
   - text: "Chào bạn! Bạn cần Bot giúp gì không?"
-  - text: "Xin chào!\nTôi là Bot, rất hân hạnh được trò chuyện với bạn!"
+  - text: "Xin chào!\nTôi là Bot, rất hân hạnh được trò chuyện với bạn!\n Tôi có thể giúp gì cho bạn không ?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -26,6 +36,11 @@ responses:
 
   utter_happy:
   - text: "Great, carry on!"
+
+  utter_thung_lung:
+  - text: "Thung Lũng Tình Yêu là một trong những thắng cảnh thơ mộng nhất tại Đà Lạt, cách trung tâm thành phố khoảng 5 km về phía bắc"
+  utter_vuon_hoa:
+  - text: "Vườn hoa thành phố Đà Lạt là một trong những địa điểm du lịch vô cùng nổi tiếng ở Đà Lạt. Phong cảnh hữu tình với địa điểm du lịch, tham quan nổi tiếng. Một trong những địa điểm mà du khách không thể bỏ qua, hãy đến Vườn hoa thành phố."
 
   utter_goodbye:
   - text: "Tạm biệt bạn!"
@@ -39,6 +54,45 @@ responses:
     buttons:
     - title: "More about Xuan Huong Lake"
       payload: "/more_info_xuan_huong_lake"
+  
+#  utter_botgreet:
+#  - text: "Tôi có thể giúp gì cho bạn ?"
+  
+  utter_genericInfo:
+  - text: "Tôi có thể tư vấn thông tin về du lịch Đà Lạt"
+    buttons:
+    - title: "Các địa điểm du lịch nổi tiếng ở Đà Lạt"
+      payload: "/dia_diem_du_lich"
+    - title: "Các địa điểm ăn uống"
+      payload: "/dia_diem_an_uong"
+
+  utter_destination_generic:
+  - text: "Đà Lạt có các địa điểm du lịch nổi tiếng như sau:\n Thung lũng tình yêu, Vườn hoa thành phố, Hồ Xuân Hương"
+    buttons:
+    - title: "Thung lũng tình yêu"
+      payload: "/thung_lung_tinh_yeu"
+    - title: "Vườn hoa thành phố"
+      payload: "/vuon_hoa_thanh_pho"
+    - title: "Hồ Xuân Hương"
+      payload: "/more_info_xuan_huong_lake"
+  
+  utter_food_time:
+  - text: "Bạn muốn ăn vào lúc nào"
+    buttons:
+    - title: "Buổi sáng"
+      payload: "/buoi_sang"
+    - title: "Buổi trưa"
+      payload: "/buoi_trua"
+    - title: "Buổi tối"
+      payload: "/buoi_toi"
+
+
+  utter_request_again:
+  - text: "Bạn cần thông tin gì nữa không"
+  utter_thanks:
+  - text : "Rất hân hạnh khi hỗ trợ bạn <3 !"
+  utter_chon_lai:
+  - text: "Rất sẵn lòng"
 
 actions: 
  - action_more_info_xuan_huong_lake

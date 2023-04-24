@@ -9,25 +9,44 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
-- story: sad path 1
+- story: happy destination path
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+  - intent: what_do_you_have
+  - action: utter_genericInfo
+  - intent: dia_diem_du_lich
+  - action: utter_destination_generic
+  - intent: chon_dia_diem_du_lich
+  - action: utter_request_again
   - intent: affirm
-  - action: utter_happy
+  - action: utter_genericInfo
+  - intent: deny
+  - action: utter_thanks
 
-- story: sad path 2
+- story: happy destination_specific path
+  steps:
+  - intent: dia_diem_du_lich
+  - action: utter_destination_generic
+  - intent: chon_dia_diem_du_lich
+  - action: utter_request_again
+  - intent: deny
+  - action: utter_thanks
+
+- story: happy food path
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: what_do_you_have
+  - action: utter_genericInfo
+  - intent: dia_diem_an_uong
+  - action: utter_food_time
+
+- story: yêu cầu lại
+  steps:
+  - intent: chon_lai
+  - action: utter_chon_lai
+  - action: utter_genericInfo
 
 #- story: location_info
 #  steps:

@@ -53,9 +53,38 @@ nlu:
 
 - intent: what_do_you_have
   examples: |
-    - What do you can do ?
-    - Which location you can provide
+    - Bạn có thể làm được gì ?
+    - Cho tôi thông tin bạn có
+    - Hãy cho tôi xem bạn làm được gì ?
     - Give me infomation 
+
+- intent: dia_diem_du_lich
+  examples: |
+    - nơi du lịch
+    - địa điểm để du lịch
+    - địa điểm để tham quan
+    - nơi để du lịch
+    - chỗ tham quan
+    - nơi nên đến tham quan, du lịch, chụp hình
+    - địa điểm đẹp để tham quan
+
+- intent: chon_dia_diem_du_lich
+  examples: |
+    - Tôi chọn Thung lũng tình yêu
+    - Tôi chọn Hồ Xuân Hương
+    - Tôi cần thông tin về Vườn hoa thành phố
+
+- intent: dia_diem_an_uong
+  examples: |
+    - Các địa điểm ăn uống
+    - địa điểm ăn uống
+    - chỗ ăn uống
+    - ăn uống
+    - an uong
+    - nghỉ ngơi ăn uống
+    - nơi có thể ăn uống
+    - nơi ăn uống ngon
+    - cần nơi ăn
 
 - intent: more_info_xuan_huong_lake
   examples: |
@@ -64,15 +93,76 @@ nlu:
     - I want info Xuan Huong Lake
     - Hồ Xuân Hương
 
-- intent: more_info_thung_lung_tinh_yeu
+- intent: thung_lung_tinh_yeu
   examples: |
     - Tell me more about Thung Lung Tinh Yeu
     - Thung Lung Tinh Yeu
     - Thông tin về Thung Lũng Tình Yêu
 
+- intent: vuon_hoa_thanh_pho
+  examples: |
+    - Cho tôi biết về Vườn hoa thành phố
+    - Vuon hoa thanh pho
+    - Thông tin về Vườn hoa thành phố
+
+- intent: buoi_sang
+  examples: |
+    - tôi muốn ăn sáng
+    - ăn sáng
+    - an sang
+    - nơi có thể ăn sáng
+    - chỗ nào ăn sáng
+    - chỗ nào có thể ăn sáng
+
+- intent: buoi_trua
+  examples: |
+    - tôi muốn ăn trưa
+    - ăn buổi trưa
+    - ăn trưa
+    - an trua
+    - nơi có thể ăn trưa
+    - nơi ăn trưa
+    - chỗ nào ăn trưa
+    - chỗ nào có thể ăn trưa
+
+- intent: buoi_toi
+  examples: |
+    - tôi muốn ăn tối
+    - ăn buổi tối
+    - ăn tối
+    - an toi
+    - nơi có thể ăn tối
+    - nơi ăn tối
+    - chỗ nào ăn tối được
+    - chỗ nào có thể ăn tối
+    - chỗ nào ăn tối ngon
+
+- intent: chon_lai
+  examples: |
+    - tôi muốn chọn lại
+    - chọn lại
+    - reset
+    - quay lại
+    - chon lai
+    - yêu cầu chọn lại
+
 - intent: affirm
   examples: |
     - yes
+    - có
+    - vâng làm ơn
+    - đúng vậy
+    - vâng
+    - có nhe
+    - co
+    - đúng 
+    - dung roi
+    - cần
+    - can
+    - cần chứ
+    - tất nhiên
+    - hiển nhiênn
+    - dung vay
     - y
     - indeed
     - of course
@@ -82,6 +172,15 @@ nlu:
 - intent: deny
   examples: |
     - no
+    - không
+    - k
+    - kh
+    - không cần
+    - thôi
+    - bỏ đi
+    - không cần nữa
+    - ko
+    - chắc là không
     - n
     - never
     - I don't think so
