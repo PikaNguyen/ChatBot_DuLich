@@ -1,0 +1,57 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+#- story: location_info
+#  steps:
+#  - intent: genericInfo
+#  - action: utter_locations
+#  - intent: provide_location
+#    entities:
+#    - location: "Hồ Xuân Hương"
+#    - location: "Thung lũng Tình Yêu"
+#  - action: action_location_info
+  
+- story: show tourist destination
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: more_info_xuan_huong_lake
+  - action: action_more_info_xuan_huong_lake
+#- story: show tourist destination
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: genericInfo
+#  - action: utter_tourist_destination
+#  - intent: more_info_xuan_huong_lake
+#  - action: action_more_info_xuan_huong_lake
+#  - intent: more_info_thung_lung_tinh_yeu
+#  - action: action_more_info_xuan_huong_lake

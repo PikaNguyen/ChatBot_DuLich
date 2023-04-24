@@ -1,0 +1,33 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+#- rule: Chung
+#  steps:
+#  - intent: genericInfo
+#  - action: utter_tourist_destination
+
+- rule: Chào hỏi
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Tạm biệt
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: show tourist destination
+  steps:
+  - intent: more_info_xuan_huong_lake
+  - action: action_more_info_xuan_huong_lake

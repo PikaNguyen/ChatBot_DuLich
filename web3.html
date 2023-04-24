@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rasa ChatBot UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+    <h1>Rasa ChatBot UI</h1>
+    <div id="rasa-chat-widget"
+         data-endpoint="http://localhost:5005"
+         data-conversation-id="my-conversation-id"
+         data-socket-url="http://localhost:5005/socket.io/"
+         data-title="My Chatbot"
+         data-params='{"storage": "session"}'
+         data-embed-button="true"
+         data-hide-input="false"
+         data-initial-message='{"text":"Hello! How can I help you?","buttons":[{"title":"The famous tourist destination in Da Lat is Xuan Huong Lake","payload":"/more_info_xuan_huong_lake"}]}'
+    >
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@rasahq/rasa-chat@1.3.4/dist/index.js"></script>
+  </body>
+</html>

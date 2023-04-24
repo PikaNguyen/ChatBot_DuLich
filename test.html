@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Rasa Chatbot</title>
+  <style>
+    #messages {
+      height: 400px;
+      overflow-y: scroll;
+      margin-bottom: 10px;
+    }
+    .message {
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+    .message.bot {
+      text-align: left;
+    }
+    .message.user {
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Rasa Chatbot</h1>
+  <div id="messages"></div>
+  <form id="message-form">
+    <input type="text" id="message-input" placeholder="Type a message...">
+    <button type="submit">Send</button>
+  </form>
+  <script>
+    const messagesContainer = document.querySelector('#messages');
+    const messageForm = document.querySelector('#message-form');
+    const messageInput = document.querySelector('#message-input');
+    const botMessageTemplate = (message) => `
+      <div class="message bot">
+        <strong>Bot:</strong> ${message}
+      </div>
+    `;
+    const userMessageTemplate = (message) => `
+      <div class="message user">
+        <strong>You:</strong> ${message}
+      </div>
+    `;
+    const scrollToBottom = () => {
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    };
+    messageForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const message = messageInput.value;
+      if (message.trim() !== '') {
+        messagesContainer.insertAdjacentHTML('beforeend', userMessageTemplate(message));
+        scrollToBottom();
+        messageInput.value = '';
+        fetch('/webhooks/rest/webhook', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: message }),
+        })
+        .then(response => response.json())
+        .then(messages => {
+          messages.forEach((message) => {
+            messagesContainer.insertAdjacentHTML('beforeend', botMessageTemplate(message.text));
+            scrollToBottom();
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

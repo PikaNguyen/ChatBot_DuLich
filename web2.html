@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rasa ChatBot UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style>
+      .hint-button {
+        margin-top: 10px;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rasa ChatBot UI</h1>
+    <div id="rasa-chat-widget" 
+         data-websocket-url="http://localhost:5005/"
+         data-endpoint="http://localhost:5005"
+         data-conversation-id="my-conversation-id"
+         data-socket-url="http://localhost:5005/socket.io/"
+         data-title="My Chatbot"
+         data-params='{"storage": "session"}'
+         data-embed-button="true"
+         data-hide-input="false"
+         data-initial-message='{"text":"Hello! How can I help you?","buttons":[{"title":"The famous tourist destination in Da Lat is Xuan Huong Lake","payload":"/more_info_xuan_huong_lake"}]}'
+    >
+    </div>
+    <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@rasahq/rasa-chat@1.3.4/dist/index.js"></script>
+    <script>
+      const chatWidget = document.querySelector('#rasa-chat-widget');
+      chatWidget.addEventListener('message', (event) => {
+        const { message } = event.detail;
+        if (message && message.buttons) {
+          const hintButton = document.createElement('button');
+          hintButton.innerText = 'Hint';
+          hintButton.classList.add('hint-button');
+          hintButton.addEventListener('click', () => {
+            alert(message.buttons[0].title);
+          });
+          const messageBox = chatWidget.shadowRoot.querySelector('.messages');
+          messageBox.appendChild(hintButton);
+        }
+      });
+    </script>
+  </body>
+</html>

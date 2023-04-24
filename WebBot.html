@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Rasa Chatbot</title>
+  <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.css">
+  <script>
+    const actionProvider = {
+      handleBotUtterance: (botUtterance) => {
+        if (botUtterance.message && botUtterance.message.buttons) {
+          const button = botUtterance.message.buttons[0];
+          const payload = button.payload;
+          const title = button.title;
+          const html = `
+            <div class="rw-message rw-custom-message">
+              <div class="rw-inner-wrapper">
+                <div class="rw-buttons">
+                  <button class="rw-button" onclick="onClick('${payload}')">${title}</button>
+                </div>
+              </div>
+            </div>
+          `;
+          document.querySelector('.rw-conversation-container').insertAdjacentHTML('beforeend', html);
+        }
+      },
+    };
+    const onClick = (payload) => {
+      const event = new Event('userInput');
+      event.data = { message: payload };
+      window.WebChat.send(event);
+    };
+    WebChat.default.init({
+      selector: '#webchat',
+      initPayload: '/get_started',
+      customData: {'language': 'en'}, // arbitrary custom data. Stay minimal as this will be added to the socket
+      socketUrl: 'http://localhost:5005',
+      socketPath: '/socket.io/',
+      title: 'My Chatbot',
+      subtitle: 'Powered by Rasa',
+      inputTextFieldHint: 'Type a message...',
+      connectingText: 'Waiting for server...',
+      hideWhenNotConnected: true,
+      embedded: false,
+      protocol: 'socketio',
+      onSocketEvent: {
+        connect: () => console.log('Connection Established'),
+        disconnect: () => console.log('Connection Closed'),
+      },
+      customActionProvider: actionProvider,
+    })
+  </script>
+</head>
+<body>
+  <div id="webchat"></div>
+</body>
+</html>

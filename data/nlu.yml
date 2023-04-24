@@ -1,0 +1,131 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - chào
+    - xin chào
+    - chào bot
+    - có ai ở đó không
+    - tôi cần hỗ trợ
+    - Chào bạn
+    - Chào anh
+    - Chào chị
+    - Chào buổi sáng
+    - Có đó không
+    - Rãnh không
+    - Ê
+    - Hú
+    - chào em
+    - em ơi, cho anh hỏi
+    - bot ơi
+    - cho mình hỏi chút
+
+- intent: goodbye
+  examples: |
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - bye bye
+    - see you later
+    - tạm biệt
+    - ngủ ngon
+    - Chúc ngủ ngon
+    - Nói chuyện sau nhé
+    - Tôi sẽ liên hệ sau
+    - tạm biệt em
+    - tạm biệt bot nhá
+
+- intent: genericInfo
+  examples: |
+    - Hãy cho tôi thông tin chung
+    - Các thông tin bạn có
+    - Thông tin
+    - Infomation
+    - info
+    - Gợi ý
+    - hint
+    - goi y
+
+- intent: what_do_you_have
+  examples: |
+    - What do you can do ?
+    - Which location you can provide
+    - Give me infomation 
+
+- intent: more_info_xuan_huong_lake
+  examples: |
+    - Tell me more Xuan Huong Lake
+    - What can you tell me about Xuan Huong Lake?
+    - I want info Xuan Huong Lake
+    - Hồ Xuân Hương
+
+- intent: more_info_thung_lung_tinh_yeu
+  examples: |
+    - Tell me more about Thung Lung Tinh Yeu
+    - Thung Lung Tinh Yeu
+    - Thông tin về Thung Lũng Tình Yêu
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

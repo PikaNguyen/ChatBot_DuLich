@@ -1,0 +1,70 @@
+version: "3.1"
+
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_unhappy
+- mood_greet
+- mood_great
+- genericInfo
+- more_info_xuan_huong_lake
+
+responses:
+  utter_greet:
+  - text: "Xin chào! Tôi có thể giúp gì cho bạn?"
+  - text: "Chào bạn! Bạn cần Bot giúp gì không?"
+  - text: "Xin chào!\nTôi là Bot, rất hân hạnh được trò chuyện với bạn!"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Tạm biệt bạn!"
+  - text: "Bye!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_tourist_destination:
+  - text: "The famous tourist destination in Da Lat is Xuan Huong Lake"
+    buttons:
+    - title: "More about Xuan Huong Lake"
+      payload: "/more_info_xuan_huong_lake"
+
+actions: 
+ - action_more_info_xuan_huong_lake
+
+#  utter_hint:
+#  - text: "Xin chào, tôi có thể tư vấn về du lịch Đà Lạt !"
+#    buttons:
+#    - title: "Các địa điểm du lịch nổi tiếng"
+#      payload: "/hint_touristInfo"
+#    - title: "Các địa điểm ăn uống"
+#      payload: "/hint_foodInfo"
+#
+#  utter_locations:
+#    - text: "Dưới đây là danh sách các địa điểm du lịch nổi tiếng ở Đà Lạt:"
+#      buttons:
+#        - title: "Thác Pongour"
+#          payload: "/location_info{location: Thác Pongour}"
+#        - title: "Hồ Xuân Hương"
+#          payload: "/location_info{location: Hồ Xuân Hương}"
+#        - title: "Thung lũng Tình Yêu"
+#          payload: "/location_info{location: Thung lũng Tình Yêu}"
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
