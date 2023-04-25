@@ -22,6 +22,7 @@ Xong mở file Web3.html test
 ![image](https://user-images.githubusercontent.com/85334608/234189695-e774cb5b-a563-4ac4-ab70-a2d4255d518b.png)
 
 
+Hướng dẫn đơn giản: 
 
 ![image](https://user-images.githubusercontent.com/85334608/234290177-7b4a237d-bf6f-4418-811a-06fa2994f317.png)
 
