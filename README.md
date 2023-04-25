@@ -21,3 +21,35 @@ Xong mở file Web3.html test
 
 ![image](https://user-images.githubusercontent.com/85334608/234189695-e774cb5b-a563-4ac4-ab70-a2d4255d518b.png)
 
+
+
+Hướng dẫn đơn giản: 
+1)tạo intent trong nlu.ym
+nlu.yml:
+nlu:
+- intent: thac_pongour
+  examples: |
+    - thác pongour
+    - thong tin ve thac pong gô
+    - thác bông gô
+    - pông ghô
+
+2) vào domain.yml khai báo intent và tạo action trong response 
+intents:
+- thac_pongour
+
+responses:
+  utter_thac_pongour:
+  - text: "Là một thác nước đẹp và imposant nằm khoảng 50km về phía nam của Đà Lạt. Đây là một trong những thác nước đẹp nhất ở Đông Nam Á với chiều cao 40m và chiều rộng 100m."
+
+3) Vào rule.yml 
+rules:
+
+- rule: xem thác pongour
+  steps:
+  - intent: thac_pongour
+  - action: utter_thac_pongour
+
+4) train dữ liệu xong chạy
+
+
