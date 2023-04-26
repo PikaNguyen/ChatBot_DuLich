@@ -20,7 +20,7 @@ intents:
 - buoi_toi
 - chon_dia_diem_du_lich
 - chon_lai
-
+- dinh_bao_dai
 responses:
   utter_greet:
   - text: "Xin chào! Tôi có thể giúp gì cho bạn?"
@@ -45,7 +45,41 @@ responses:
   utter_goodbye:
   - text: "Tạm biệt bạn!"
   - text: "Bye!"
+  
+  utter_dinhbaodai:
+  - text: "Là một dinh thự cổ được xây dựng vào những năm 1930, là nơi sinh sống và làm việc của vua Bảo Đại và gia đình ông"
 
+  utter_chualinhphuoc:
+  - text: "Là một ngôi chùa cổ kính được xây dựng từ những năm 1949, nằm cách trung tâm thành phố Đà Lạt khoảng 8km về phía đông nam"
+  - text: "Chùa có kiến trúc độc đáo và được trang trí bằng những tảng đá đa màu sắc, thu hút nhiều du khách đến tham quan"
+  - text: "Là một ngôi chùa cổ kính được xây dựng từ những năm 1949, nằm cách trung tâm thành phố Đà Lạt khoảng 8km về phía đông nam. Chùa có kiến trúc độc đáo và được trang trí bằng những tảng đá đa màu sắc, thu hút nhiều du khách đến tham quan"
+
+  utter_thacPongour:
+  - text: "Là một thác nước đẹp và imposant nằm khoảng 50km về phía nam của Đà Lạt"
+  - text: "Thác Pôngur là một trong những thác nước đẹp nhất ở Đông Nam Á với chiều cao 40m và chiều rộng 100m"
+  - text: "Nằm ở Địa chỉ : Thôn Tân Nghĩa- X. Ninh Gia- H. Đức Trọng – T. Lâm Đồng.Thác Pongour là một trong những thác nước đẹp nhất ở Đông Nam Á với chiều cao 40m và chiều rộng 100m "
+
+  utter_vuonHoa:
+  - text: "Là một vườn hoa lớn và đẹp, nằm tại trung tâm thành phố Đà Lạt. Vườn hoa Đà Lạt có nhiều loại hoa đẹp, được trang trí đẹp mắt và là nơi lý tưởng để chụp ảnh"
+
+  utter_quancomgaBaHanh:
+  - text: "là quán cơm gà nổi tiếng và được yêu thích ở Đà Lạt, nơi đây có nhiều món ăn ngon như cơm gà, gà chiên giòn, bánh canh, nui..."
+
+  utter_quancheThanhThao:
+  - text: "là quán chè đặc trưng ở Đà Lạt, quán có nhiều loại chè đặc sản như chè khoai lang, chè đỗ đen, chè đậu xanh, chè sen..."
+
+  utter_nhahangngonVilla:
+  - text : "là một nhà hàng cao cấp, phục vụ các món ăn Á và Âu, có không gian sang trọng, tuyệt đẹp, đặc biệt là từ nhà hàng có thể ngắm nhìn toàn cảnh Đà Lạt."
+
+  utter_quananLyHoaSua:
+  - text : "là quán ăn đặc sản ở Đà Lạt, nổi tiếng với các món ăn ngon như bánh canh ghẹ, bún riêu, bún bò, nem nướng,..."
+
+  utter_banhtrangnuong:
+  - text : "Là món ăn đặc sản được nhiều du khách yêu thích ở Đà Lạt. Bánh tráng nướng Đà Lạt có hương vị độc đáo, thơm ngon và được chế biến trên đĩa nướng đặc biệt trên than hoa."
+
+  utter_cafeVuon:
+  - text : "là quán cafe yên tĩnh, có không gian rộng, được trang trí đẹp mắt với không gian mở, tạo cảm giác thư giãn, được nhiều du khách yêu thích để thưởng thức cafe và tán gẫu."
+  
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
@@ -75,6 +109,8 @@ responses:
       payload: "/vuon_hoa_thanh_pho"
     - title: "Hồ Xuân Hương"
       payload: "/more_info_xuan_huong_lake"
+    - title: "Dinh Bảo Đại"
+      payload: "/dinh_bao_dai"
   
   utter_food_time:
   - text: "Bạn muốn ăn vào lúc nào"
@@ -85,7 +121,7 @@ responses:
       payload: "/buoi_trua"
     - title: "Buổi tối"
       payload: "/buoi_toi"
-
+  
 
   utter_request_again:
   - text: "Bạn cần thông tin gì nữa không"

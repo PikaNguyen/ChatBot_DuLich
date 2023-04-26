@@ -46,3 +46,53 @@ rules:
   steps:
   - intent: dia_diem_an_uong
   - action: utter_food_time
+
+- rule : Xem thông tin Dinh Bảo Đại
+  steps:
+  - intent: dinh_bao_dai
+  - action: utter_dinhbaodai
+
+- rule : Xem thông tin Chùa Linh Phuoc
+  steps:
+  - intent: chua_linh_phuoc
+  - action: utter_chualinhphuoc
+
+- rule : Xem thông tin thác Poungor
+  steps:
+  - intent: thac_Pongour
+  - action: utter_thacPongour
+
+- rule : Xem thông tin vườn hoa đà lạt
+  steps:
+  - intent: vuon_hoa_da_lat
+  - action: utter_vuonHoa
+
+- rule : Xem thông tin quán cơm gà bà Hạnh
+  steps:
+  - intent: quan_com_ga_ba_hanh
+  - action:  utter_quancomgaBaHanh
+
+- rule : Xem thông tin quán chè Thanh Thảo
+  steps:
+  - intent:  quan_che_thanh_thao
+  - action:  utter_quancheThanhThao
+
+- rule : Xem thông tin nhà hàng ngon-Villa
+  steps:
+  - intent: nha_hang_ngon_vila
+  - action: utter_nhahangngonVilla
+
+- rule : Xem thông tin quán ăn lý hoa sữa
+  steps:
+  - intent: quan_an_ly_hoa_sua
+  - action:  utter_quananLyHoaSua
+
+- rule : Xem thông tin bánh tráng nướng 
+  steps:
+  - intent: banh_trang_nuong
+  - action:  
+
+- rule : Xem thông tin quán cafe vuon
+  steps:
+  - intent: 
+  - action:  
