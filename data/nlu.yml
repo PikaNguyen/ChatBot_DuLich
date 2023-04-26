@@ -75,6 +75,12 @@ nlu:
     - Tôi chọn Hồ Xuân Hương
     - Tôi cần thông tin về Vườn hoa thành phố
 
+- intent: trang_website
+  examples: |
+    - trangwebsite
+    - web
+    - web đà lat
+
 - intent: dia_diem_an_uong
   examples: |
     - Các địa điểm ăn uống
@@ -173,6 +179,75 @@ nlu:
     - cafe vuon
     - càe vuon
 
+- intent: dinh_bao_dai
+  examples: |
+    - Cho tôi biết về dinh bảo đại
+    - Bảo Đại
+    - dinh bao đai
+    - dinh thự
+
+- intent: nha_tho_con_ga
+  examples: |
+    - Cho tôi biết về nhà thờ con gà
+    - nha tho con ga
+    - con ga
+
+- intent: nha_tho_domaine_de_marie
+  examples: |
+    - Cho tôi biết về nhà thờ Domaine_de_marie
+    - Doman
+    - de_marie
+    - nha tho domaine
+
+- intent: quan_cafe_vuon
+  examples: |
+    - Cho tôi biết về quán cafe vuon
+    - cafe
+    - cafe vuon
+    - càe vuon
+
+- intent: cung_dien_tran_le_xuan
+  examples: |
+    - Cho tôi biết về cung điện Trần Lệ Xuân
+    - Lệ Xuân
+    - tran le xuan
+    - cung dien
+
+- intent: doi_robin
+  examples: |
+    - Cho tôi biết về đồi robin
+    - robin
+    - doi robin
+ 
+
+- intent: cho_dalat
+  examples: |
+    - Cho tôi biết về chợ đà lạt
+    - cho da lat
+    - cho dem 
+    - cho dem DL
+
+
+- intent: hem_32
+  examples: |
+    - Cho tôi biết về Hẻm 3/2
+    - 3/2
+    - hem 3/2
+ 
+- intent: go_dalat
+  examples: |
+    - Cho tôi biết về siêu thị go đà lạt
+    - go dalat
+    - siêu thị
+    - sieu thi
+
+- intent: coopmart_dalat
+  examples: |
+    - siêu thị thực phẩm
+    - cho tôi biết về coopmart_dalat
+    - compmart
+
+ 
 - intent: buoi_sang
   examples: |
     - tôi muốn ăn sáng

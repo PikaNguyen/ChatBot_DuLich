@@ -47,6 +47,11 @@ rules:
   - intent: dia_diem_an_uong
   - action: utter_food_time
 
+- rule: Chọn trang web 
+  steps:
+  - intent: trang_website
+  - action: utter_website
+
 - rule : Xem thông tin Dinh Bảo Đại
   steps:
   - intent: dinh_bao_dai
@@ -90,9 +95,49 @@ rules:
 - rule : Xem thông tin bánh tráng nướng 
   steps:
   - intent: banh_trang_nuong
-  - action:  
+  - action: utter_banhtrangnuong
 
 - rule : Xem thông tin quán cafe vuon
   steps:
-  - intent: 
-  - action:  
+  - intent: quan_cafe_vuon
+  - action: utter_cafeVuon
+
+- rule : Xem thông tin nhà thờ con gà
+  steps:
+  - intent: nha_tho_con_ga
+  - action: utter_conga
+
+- rule : Xem thông tin nhà thờ domaine de marie
+  steps:
+  - intent: nha_tho_domaine_de_marie
+  - action: utter_domaine
+
+- rule : Xem thông tin cung điện Trần Lệ Xuân
+  steps:
+  - intent: cung_dien_tran_le_xuan
+  - action: utter_tranlexuan
+
+- rule : Xem thông tin Đồi Robin
+  steps:
+  - intent: doi_robin
+  - action: utter_robon
+
+- rule : Xem thông tin chơ đà lạt
+  steps:
+  - intent: cho_dalat
+  - action: utter_chodalat
+
+- rule : Xem thông tin hẻm 3/2
+  steps:
+  - intent: hem_32
+  - action: utter_hem32
+
+- rule : Xem thông tin siêu thị go Đà lạt
+  steps:
+  - intent: go_dalat
+  - action: utter_Go_DaLat
+
+- rule : Xem thông tin siêu thị Co.opmart
+  steps:
+  - intent: coopmart_dalat
+  - action: utter_Co_opmart

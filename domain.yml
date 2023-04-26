@@ -29,7 +29,8 @@ responses:
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    image: "https://i.imgur.com/nGF1K8f.jpg" 
+    
 
   utter_did_that_help:
   - text: "Did that help you?"
@@ -39,9 +40,10 @@ responses:
 
   utter_thung_lung:
   - text: "Thung Lũng Tình Yêu là một trong những thắng cảnh thơ mộng nhất tại Đà Lạt, cách trung tâm thành phố khoảng 5 km về phía bắc"
+   
   utter_vuon_hoa:
   - text: "Vườn hoa thành phố Đà Lạt là một trong những địa điểm du lịch vô cùng nổi tiếng ở Đà Lạt. Phong cảnh hữu tình với địa điểm du lịch, tham quan nổi tiếng. Một trong những địa điểm mà du khách không thể bỏ qua, hãy đến Vườn hoa thành phố."
-
+    image: "https://godidigo.com/blog/wp-content/uploads/2018/12/ho-xuan-huong-da-lat-1.jpg"
   utter_goodbye:
   - text: "Tạm biệt bạn!"
   - text: "Bye!"
@@ -69,20 +71,55 @@ responses:
   - text: "là quán chè đặc trưng ở Đà Lạt, quán có nhiều loại chè đặc sản như chè khoai lang, chè đỗ đen, chè đậu xanh, chè sen..."
 
   utter_nhahangngonVilla:
-  - text : "là một nhà hàng cao cấp, phục vụ các món ăn Á và Âu, có không gian sang trọng, tuyệt đẹp, đặc biệt là từ nhà hàng có thể ngắm nhìn toàn cảnh Đà Lạt."
+  - text: "là một nhà hàng cao cấp, phục vụ các món ăn Á và Âu, có không gian sang trọng, tuyệt đẹp, đặc biệt là từ nhà hàng có thể ngắm nhìn toàn cảnh Đà Lạt."
 
   utter_quananLyHoaSua:
-  - text : "là quán ăn đặc sản ở Đà Lạt, nổi tiếng với các món ăn ngon như bánh canh ghẹ, bún riêu, bún bò, nem nướng,..."
+  - text: "là quán ăn đặc sản ở Đà Lạt, nổi tiếng với các món ăn ngon như bánh canh ghẹ, bún riêu, bún bò, nem nướng,..."
 
   utter_banhtrangnuong:
-  - text : "Là món ăn đặc sản được nhiều du khách yêu thích ở Đà Lạt. Bánh tráng nướng Đà Lạt có hương vị độc đáo, thơm ngon và được chế biến trên đĩa nướng đặc biệt trên than hoa."
+  - text: "Là món ăn đặc sản được nhiều du khách yêu thích ở Đà Lạt. Bánh tráng nướng Đà Lạt có hương vị độc đáo, thơm ngon và được chế biến trên đĩa nướng đặc biệt trên than hoa."
 
   utter_cafeVuon:
-  - text : "là quán cafe yên tĩnh, có không gian rộng, được trang trí đẹp mắt với không gian mở, tạo cảm giác thư giãn, được nhiều du khách yêu thích để thưởng thức cafe và tán gẫu."
+  - text: "là quán cafe yên tĩnh, có không gian rộng, được trang trí đẹp mắt với không gian mở, tạo cảm giác thư giãn, được nhiều du khách yêu thích để thưởng thức cafe và tán gẫu."
   
+  utter_baodai:
+  - text: "Dinh Bảo Đại được xây dựng vào những năm 1930 và là nơi sinh sống của Hoàng đế cuối cùng của triều đại Nguyễn. Hiện nay, dinh Bảo Đại là một điểm tham quan phổ biến cho du khách, nơi để tìm hiểu về lịch sử và văn hóa của Đà Lạt."
+    image: "https://disantrangan.vn/wp-content/uploads/2021/09/dinh_bao_dai_da_lat_05.jpg"
+
+  utter_conga:
+  - text: ":Là một công trình kiến trúc độc đáo tại Đà Lạt, được xây dựng vào những năm 1930. Nhà thờ có kiến trúc theo phong cách Gothic, với tòa nhà được xây dựng từ gỗ, đá và ngói."
+    image: "https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/01/nha-tho-con-ga-2.png"
+
+  utter_domaine:
+  - text: "Là một nhà thờ kiến trúc độc đáo, được xây dựng vào những năm 1940 bởi các nữ tu của Dòng Mến Thánh Giá. Nhà thờ có kiến trúc Pháp, với tường đá và cửa sổ đơn giản."
+    image: "https://nhathoconggiao.com/wp-content/hinh-nha-tho/files/l_df386e521956a468e3222b2d89848683.jpg"
+
+  utter_tranlexuan:
+  - text: "Cung điện Trần Lệ Xuân, còn được gọi là Cung điện Hòa Bình, được xây dựng vào những năm 1950. Đây là nơi sinh sống của Công nương Nam Phương và cũng là nơi để tìm hiểu về lịch sử và văn hóa của Đà Lạt."
+    image: "https://img.360dalat.com/resize/730x-/2020/11/02/biet-dien-tran-le-xuan-9ce0.jpg"
+
+  utter_robon:
+  - text: "Đây là một địa điểm du lịch phổ biến, nơi du khách có thể tìm hiểu về lịch sử của Đà Lạt và cảnh quan thiên nhiên đẹp. Đồi Robin có nhiều công trình kiến trúc cổ, bao gồm một nhà máy thủy điện cũ, những ngôi nhà cổ và một bảo tàng."
+    image: "https://go2joy.s3.ap-southeast-1.amazonaws.com/blog/wp-content/uploads/2022/04/18105731/doi-robin-da-lat-o-dau.jpg"
+
+  utter_chodalat:
+  - text: "Là trung tâm mua sắm lớn nhất của thành phố, tại đây du khách có thể tìm thấy các sản phẩm địa phương như trái cây, rau củ, hoa quả khô, đặc sản, quần áo, phụ kiện và đồ thủ công mỹ nghệ"
+    # image: "https://go2joy.s3.ap-southeast-1.amazonaws.com/blog/wp-content/uploads/2022/04/18105731/doi-robin-da-lat-o-dau.jpg"
+  
+  utter_hem32:
+  - text: "Là một khu phố có nhiều cửa hàng thời trang, phụ kiện, giày dép và đồ gia dụng."
+    # image: "https://go2joy.s3.ap-southeast-1.amazonaws.com/blog/wp-content/uploads/2022/04/18105731/doi-robin-da-lat-o-dau.jpg"
+  
+  utter_Go_DaLat:
+  - text: "Là một siêu thị lớn tại Đà Lạt, cung cấp đầy đủ các loại hàng hóa, từ thực phẩm đến thiết bị gia dụng và quần áo"
+    # image: "https://go2joy.s3.ap-southeast-1.amazonaws.com/blog/wp-content/uploads/2022/04/18105731/doi-robin-da-lat-o-dau.jpg"
+  
+  utter_Co_opmart:
+  - text: "Là một siêu thị khác cung cấp đầy đủ các loại hàng hóa, từ thực phẩm đến thiết bị gia dụng và quần áo"
+    # image: "https://go2joy.s3.ap-southeast-1.amazonaws.com/blog/wp-content/uploads/2022/04/18105731/doi-robin-da-lat-o-dau.jpg"
+
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
-
   utter_tourist_destination:
   - text: "The famous tourist destination in Da Lat is Xuan Huong Lake"
     buttons:
@@ -99,7 +136,10 @@ responses:
       payload: "/dia_diem_du_lich"
     - title: "Các địa điểm ăn uống"
       payload: "/dia_diem_an_uong"
-
+    - title: "Các khách sạn view đẹp ở đà lạt"
+      payload: "/khach_san_da_lat"
+    - title: "Những chương trình đi tour ở đà lạt"
+      payload: "/di_tour_da_lat"
   utter_destination_generic:
   - text: "Đà Lạt có rất nhiều địa điểm du lịch nổi tiếng"
     buttons:
@@ -121,8 +161,19 @@ responses:
       payload: "/buoi_trua"
     - title: "Buổi tối"
       payload: "/buoi_toi"
-  
-
+  utter_website:
+  - text: "Những trang web về du lịch đà lạt"
+    buttons:
+    - title: "vietnamtourism.com"
+      payload: "https://vietnamtourism.com.vn/"
+    - title: "dalatcity.org"
+      payload: "https://dalat.vn/"
+    - title: "dulichdalat.pro"
+      payload: "https://dulichdalat.pro/"
+    - title: "dalat.travel"
+      payload: "https://dalat.travel/"
+    - title: "vietnamonline.com"
+      payload: "https://www.vietnamonline.com/"
   utter_request_again:
   - text: "Bạn cần thông tin gì nữa không"
   utter_thanks:
