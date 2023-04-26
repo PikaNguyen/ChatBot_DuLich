@@ -90,9 +90,9 @@ rules:
 - rule : Xem thông tin bánh tráng nướng 
   steps:
   - intent: banh_trang_nuong
-  - action:  
+  - action: utter_banhtrangnuong
 
 - rule : Xem thông tin quán cafe vuon
   steps:
-  - intent: 
-  - action:  
+  - intent: quan_cafe_vuon
+  - action: utter_cafeVuon
