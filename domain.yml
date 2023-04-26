@@ -92,7 +92,7 @@ responses:
   utter_thanks:
   - text : "Rất hân hạnh khi hỗ trợ bạn <3 !"
   utter_chon_lai:
-  - text: "Rất sẵn lòng"
+  - text: "Rất sẵn lòng ^_^ "
 
 actions: 
  - action_more_info_xuan_huong_lake

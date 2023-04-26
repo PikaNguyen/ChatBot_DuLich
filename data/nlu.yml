@@ -57,6 +57,15 @@ nlu:
     - Cho tôi thông tin bạn có
     - Hãy cho tôi xem bạn làm được gì ?
     - Give me infomation 
+    - anh có gì
+    - bạn cho tôi được những gì ?
+    - làm được gì không ?
+    - lm đc j k ?
+    - tư vấn gì ?
+    - tác dụng của bạn là gì
+    - có tac dung gì
+    - biết làm gì không
+
 
 - intent: dia_diem_du_lich
   examples: |
@@ -145,6 +154,8 @@ nlu:
     - quay lại
     - chon lai
     - yêu cầu chọn lại
+    - nói lại được không
+    - yêu cầu lại
 
 - intent: affirm
   examples: |
