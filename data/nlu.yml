@@ -29,6 +29,7 @@ nlu:
     - cee you later
     - good night
     - bye
+    - bai
     - goodbye
     - bye bye
     - see you later
@@ -104,6 +105,73 @@ nlu:
     - Cho tôi biết về Vườn hoa thành phố
     - Vuon hoa thanh pho
     - Thông tin về Vườn hoa thành phố
+- intent: dinh_bao_dai
+  examples: |
+    - Cho tôi biết vè dinh bảo đại
+    - dinh bao dai
+    - thông tin về dinh bao
+    - bao dai 
+
+- intent: chua_linh_phuoc
+  examples: |
+    - Cho tôi biết về chùa linh Phước
+    - chua linh phuoc
+    - thong tin ve chua linh phuoc
+    - linh phuoc
+
+
+- intent: thac_Pongour
+  examples: |
+    - Cho tôi biết về thác Pongour
+    - thac
+    - Pongour
+    - thac pôngur
+
+
+- intent: vuon_hoa_da_lat
+  examples: |
+    - Cho tôi biết về vườn hoa đà lạt
+    - vuon hoa da lat
+    - thong tin vuon hoa
+    - hoa da lat
+
+- intent: quan_com_ga_ba_hanh
+  examples: |
+    - Cho tôi biết về quán cơm gà 
+    - com ga
+    - com ga Ba hanh
+
+- intent: quan_che_thanh_thao
+  examples: |
+    - Cho tôi biết về quán chè Thanh Thảo
+    - che Thanh Thảo
+    - thanh thao
+
+- intent: nha_hang_ngon_vila
+  examples: |
+    - Cho tôi biết về nhà hàng Ngon Villa
+    - ngon villa
+    - nhà hàng villa
+
+- intent: quan_an_ly_hoa_sua
+  examples: |
+    - Cho tôi biết về quán ăn lý hoa sữa
+    - ly hoa sua
+    - quán ăn lý hoa sua
+    - quan an ly hoa sua
+
+- intent: banh_trang_nuong
+  examples: |
+    - Bánh tráng nướng đà lạt
+    - banh trang nuong
+    - banh trang da lat
+
+- intent: quan_cafe_vuon
+  examples: |
+    - Cho tôi biết về quán cafe vuon
+    - cafe
+    - cafe vuon
+    - càe vuon
 
 - intent: buoi_sang
   examples: |
@@ -228,3 +296,4 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
