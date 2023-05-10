@@ -24,6 +24,13 @@ nlu:
     - bot ơi
     - cho mình hỏi chút
 
+- intent: info
+  examples: |
+    - bạn là ai? 
+    - m là ai? 
+    - ê m 
+    - là gì 
+
 - intent: goodbye
   examples: |
     - cee you later

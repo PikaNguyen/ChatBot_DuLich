@@ -18,25 +18,55 @@ intents:
 - buoi_sang
 - buoi_trua
 - buoi_toi
+- banh_uot_long_ga
+- bun_coi
+- banh_mi_da_lat
+- com_nieu_da_lat
+- lau_ga_la_e
+- com_lam_ga_nuong
+- banh_can_da_lat
+- chao_dem
+- lau_bo_ba_toa
 - chon_dia_diem_du_lich
 - chon_lai
 - dinh_bao_dai
 responses:
   utter_greet:
-  - text: "Xin chào! Tôi có thể giúp gì cho bạn?"
-  - text: "Chào bạn! Bạn cần Bot giúp gì không?"
-  - text: "Xin chào!\nTôi là Bot, rất hân hạnh được trò chuyện với bạn!\n Tôi có thể giúp gì cho bạn không ?"
+  - text: |-
+        Chào bạn. 
+        Tôi là chatbot được thiết kế để cung cấp cho bạn một số thông tin về du lịch Đà Lạt như:
+        - Thông tin về các điểm du lịch
+        - Các hình ảnh về các điểm du lịch
+        - Những điểm tham quan hấp dẫn
+        - Những trung tâm mua sắm
+        - Những di tích lịch sử
+        - Những trang web du lịch
+        - Những chương trình đi tour
+
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg" 
     
-
+  # utter_goodbye:
+  #   - image: https://i.imgur.com/nGF1K8f.jpg
+  #     text: Tạm biệt. Cảm ơn vì đã hỏi tôi. Tôi luôn sẵn sàng phục vụ.
+  # utter_howareyou:
+  #   - text: Tôi vẫn khỏe, cảm ơn bạn đã hỏi thăm. Chúc bạn một ngày tốt lành.
+  # utter_ask_bot_name:
+  #   - text: Tôi tên DLUBot. Rất vui được hỗ trợ bạn.
+  # utter_did_that_help:
+  #   - text: Thông tin mà tôi cung cấp có đúng yêu cầu của bạn chưa. Nếu chưa bạn hãy đặt lại câu hỏi rõ ràng hơn chút nhé.?
+  # utter_sorry:
+  #   - text: Tôi xin lỗi vì chưa quá thông minh nên chưa hiểu được bạn muốn hỏi gì. Bạn hãy hỏi lại đơn giản, rõ ràng hơn giúp tôi nhé.
+  # utter_thanks:
+  #   - text: Không có gì. Tôi luôn sẵn sàng hỗ trợ bạn. cảm ơn bạn đã hỏi.
+  utter_happy:
+    - text: Cảm ơn bạn đã khen tôi. Tôi luôn sẵn lòng cung cấp thông tin cho bạn bất cứ lúc nào.
+  
+  
   utter_did_that_help:
   - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
 
   utter_thung_lung:
   - text: "Thung Lũng Tình Yêu là một trong những thắng cảnh thơ mộng nhất tại Đà Lạt, cách trung tâm thành phố khoảng 5 km về phía bắc"
@@ -48,6 +78,150 @@ responses:
   - text: "Tạm biệt bạn!"
   - text: "Bye!"
   
+  utter_banh_uot_long_ga:
+  - text: "Bánh ướt lòng gà Đà Lạt sẽ là một sự lựa chọn lý tưởng dành cho những ai muốn trải nghiệm ẩm thực độc đáo của xứ sở sương mù Đà Lạt. Khắp các con phố Đà Lạt, đâu đâu cũng bắt gặp những quán bán bánh ướt lòng gà. Trong tiết trời se lạnh của Đà Lạt, được thưởng thức đĩa bánh ướt nóng ăn cùng nước chấm chua ngọt thì còn gì tuyệt vời hơn.
+    1.Bánh ướt lòng gà Thảo 
+        Quán bánh ướt lòng gà Thảo rất ngon và nổi tiếng tại thành phố Đà Lạt được nhiều khách địa phương lui tới. Quán bán giá bình dân, một tô bánh ướt lòng gà đầy đủ bao gồm: bánh ướt mỏng mềm, thịt gà ta xé bóp gỏi, lòng gà, trứng non lòng đào béo ngậy, hành tây chua ngọt giòn giòn kết hợp với hành phi nhà làm vừa giòn vừa thơm nức mũi luôn …và cuối cùng là nước chấm chua ngọt đậm đà vừa vặn tạo nên một tô bánh ướt đặc biệt ăn siêu cuốn luôn! nước chấm ở đây được thực khách chấm điểm 9/10.
+        Địa chỉ: số 09, Đồng Tâm, phường 4, thành phố Đà Lạt, tỉnh Lâm Đồng
+        Số điện thoại: 0373 007 139
+        Mức giá tham khảo: 25.000 VNĐ/suất
+        Giờ mở cửa: đang cập nhật
+        Đánh giá: 4/5
+    2.Bánh ướt lòng gà Bếp Đà Lạt
+        Bánh ướt lòng gà – một món ăn được biết bao du khách nếm thử và đem lòng yêu thích khi đến thành phố sương mù Đà Lạt. Cứ hễ trở lại thành phố này kiểu gì cũng phải tấp vào làm một đĩa cho đỡ thèm. Nằm trong danh sách Top quán bánh ướt lòng gà ngon ở Đà Lạt chắc chắn không thể thiếu cái tên Tiệm ăn Bếp Đà Lạt.
+        Địa chỉ: 10 Phan Bội Châu, Phường 1, Thành phố Đà Lạt, Lâm Đồng
+        Giờ mở cửa: 5:00 – 22:00
+        Mức giá tham khảo: 25.000 VNĐ – 35.000 VNĐ
+        Fanpage: https://www.facebook.com/godalatquan
+        Số điện thoại:  091 863 49 61
+        Đánh giá: 5/5
+    3.Bánh ướt lòng gà quán Long
+        Bánh ướt lòng gà ở quán Long nổi tiếng là được nhiều du khách yêu thích, đây còn là một địa chỉ ruột của nhiều người dân địa phương. Một suất bánh ướt đầy đủ rau ăn kèm, lòng gà, trứng non bóp gỏi và thịt gà rất chuẩn vị. Gà ta mềm, ngọt thịt, không bị bở như thịt gà công nghiệp.
+        Địa chỉ: Hẻm 202 Phan Đình Phùng, thành phố Đà Lạt, tình Lâm Đồng
+        Mức giá tham khảo: 25.000 VNĐ/ suất
+        Giờ mở cửa: 06:30 – 18:00
+        Số điện thoại: 0382529116
+        Đánh giá: 4/5"
+  
+  utter_bun_coi:
+  - text :  "Với nhiều người thay vì nấu bữa sáng tại nhà thì họ thường lựa chọn đi ăn sáng ở ngoài hàng quán. Có thể là vì họ muốn dành thời gian để ngủ nướng thêm một chút. Hay là muốn dành thời gian để ăn sáng, trò chuyện cùng gia đình và bạn bè. Đây cũng là một sự lựa chọn hợp lý.
+    1.Bún xì dầu – Bấu xì giùn Đà Lạt
+      Có thể nói, thành công nhất của Bầu Xì Giùn chính là mang món ăn truyền thống, dân dã ngày trước – bún xì dầu đến gần hơn với thế hệ trẻ hôm nay, nhưng đã “cách tân” với nhiều hấp dẫn và thu hút.
+      Với niềm đam mê, háo hức tìm về những giá trị truyền thống, các bạn trẻ đã đón nhận Bún xì dầu xoá mọi ngăn cách giữa các thế hệ, vừa thưởng thức, vừa chiêm nghiệm và có cho mình những trải nghiệm ẩm thực tuyệt vời.
+      Địa chỉ: Lô H19, 20 KQH Phạm Hồng Thái, Phường 10, Đà Lạt
+      Giờ mở cửa: 08:30 – 21:00
+      Số điện thoại: 0868068214 – 0868067050
+      Mức giá tham khảo: 30.000 VNĐ
+      Đánh giá: 4,8/5
+    2.Quán Hà Bún Bò Huế
+      Đây là một trong nhiều quán bún bò được nấu theo kiểu Huế tại Đà Lạt. Tuy nhiên, quán Hà nhận được rất nhiều sự yêu thích từ người dân nơi đây bởi hương vị thơm ngon của bún tại quán.
+      Địa chỉ: 52 Thi Sách, P.6, TP. Đà Lạt
+      Giờ mở cửa: 07:00 – 22:00
+      Mức giá tham khảo: 15.000 VNĐ – 28.000 VNĐ
+      Số điện thoại: 02633501315
+      Đánh giá: 4/5"
+
+  utter_banh_mi:
+  - text: "Bánh mỳ được xem là sự lựa chọn thích hợp cho một bữa ăn sáng ở Đà Lạt nhanh chóng cho du khách . 5 loại bánh mỳ ngon Đà Lạt sau đây sẽ không làm du khách thất vọng.\
+    1.Bánh mỳ xíu mại là món bánh mỳ nổi tiếng ở Đà Lạt
+      Bánh mỳ xíu mại hấp dẫn bởi hương vị của nước sốt và viên thịt (xíu mại). Nước sốt được chế từ nước xương ninh tạo vị ngọt tự nhiên. Viên thịt tròn nhỏ được ướp ngũ vị hương, quyện với nước sốt đậm đà khiến thực khách mê mẩn món ăn. Miếng bánh mỳ nóng giòn tan quyện nước chấm như tan đều trong miệng, thấm từng vị giác.
+      Quán bánh mỳ xíu mại: 26 Hoàng Diệu, TP, Đà Lạt
+      Hướng dẫn đường đến quán
+      Giá tham khảo: 15.000đ/suất
+    2.Bánh mỳ xíu mại sốt cam có vị ngọt, chua dịu nhẹ
+      Bánh mỳ xíu mại sốt cam lôi cuốn du khách bởi hương vị ngọt ngào của nước cốt cam. Đà Lạt nổi tiếng với giống cam ruột đỏ như màu cà rốt, vị chua nhẹ. Cam được dùng để làm nước sốt tạo nên hương vị lạ miệng, kết hợp với viên thịt xíu mại, thêm cọng rau mùi thơm khiến thực khách như bị mê hoặc.
+      Quán bánh mỳ xíu mại sốt cam : 281/1 Phan Đình Phùng- Đà Lạt
+      Hướng dẫn đường đến quán
+      Giá tham khảo: 30.000đ/suất"
+
+
+  utter_com_lam:
+  - text: "Gà nướng ăn với cơm lam được xem như một đặc sản đáng tự hào của người dân Tây Nguyên. Du khách mỗi lần đến Đà Lạt chắc  hẳn đều muốn thưởng thức món ăn hấp dẫn này. Hiện nay đã có rất nhiều quán cơm lam gà nướng tại Đà Lạt nhưng ngon nhất phải kể đến top những quán dưới đây.
+      1. Cơm lam gà nướng Nam Anh Phát
+        Địa chỉ: 36 Mạc Đĩnh Chi, Phường 4, Thành phố Đà Lạt, Lâm Đồng
+        Giờ mở cửa: 9h00 – 23h00
+        Giá tiền: 50.000 – 250.000 VND
+        Cái tên góp mặt đầu tiên trong danh sách quán cơm lam gà nướng Đà Lạt ngon chính là quán Nam Anh Phát. Đến với quán ăn này, du khách sẽ được thưởng thức món gà nướng ăn cùng cơm lam – đặc sản núi rừng thân thương.
+      2. Cơm lam gà nướng Khương Duy
+        Địa chỉ: QL 722, Ngã 3 Mangline, đường Ankroet – Cam Ly, Thành phố Đà Lạt, Lâm Đồng
+        Giờ mở cửa: 8h00 – 22h00
+        Giá tiền: 35.000 – 360.000 VND
+        Quán Khương Duy một trong những địa chỉ thưởng thức món gà nướng cơm lam Đà Lạt ngon chuẩn vị núi rừng. Với cách nướng gà đặc biệt, gà được để nguyên con sau đó tẩm ướp ngoài da. Nhét rau rừng và những gia vị cổ truyền vào trong bụng gà."
+
+  utter_lau_ga:
+  - text: "Bạn đã nghe tên hay thưởng thức món Lẩu gà lá é Đà Lạt chưa? Nếu chưa thì cũng mình khám phá ngay nhé!Lẩu gà lá é là một trong những đặc sản của vùng đất Phú Yên. Món ăn này là sự kết hợp hoàn hảo giữa vị ngọt của thịt gà, của nấm và vị the mát của lá é.
+      1. Lẩu Gà Đà Lạt 09018889999 – 28 Huỳnh Thúc Kháng
+        Thông tin quán Lẩu Gà Đà Lạt:
+        Địa chỉ: Số 28 đường Huỳnh Thúc Kháng, Phường 4, Thành phố Đà Lạt, Lâm Đồng
+        Số điện thoại: 0901 888 999
+        Thời gian mở cửa: 08:00 – 21:30
+        Mức giá: 300.000 VNĐ/nồi lẩu
+        Review quán Lẩu Gà Đà Lạt
+        Nếu bạn muốn tìm một quán ăn ẩm thực đầy đủ đặc sản nhưng vẫn đảm bảo đậm đà hương vị thì hãy nhớ ghé đến quán Lẩu Gà Đà Lạt 09018889999 nhé. Giữa không khí se lạnh của cao nguyên mà ngồi thưởng thức nồi lẩu nóng hổi thật không còn gì tuyệt vời hơn.
+      2. Lẩu Gà Lá é Tao Ngộ 28B Hải Thượng
+        Thông tin quán lẩu Gà Lá é Tao Ngộ 28B Hải Thượng:
+        Địa chỉ: 28b Hải Thượng, Phường 6, Thành phố Đà Lạt, Lâm Đồng
+        Số điện thoại: 0796 681 819
+        Thời gian mở cửa: 08:00 – 22:30
+        Mức giá tham khảo: 250.000 VNĐ/nồi lẩu
+        Review quán lẩu Gà Lá é Tao Ngộ 28B Hải Thượng
+        Một địa chỉ thưởng thức món lẩu gà lá é ngon chuẩn vị mà bạn không thể bỏ qua khi đến Đà Lạt đấy chính là quán lẩu Gà Lá é Tao Ngộ 28B Hải Thượng. Đây là chi nhánh mới của quán gốc trên đường 3/4. Địa chỉ mới này nằm trên trục đường chính nên rất dễ tìm và thuận tiện đi lại."
+
+  utter_com_nieu:
+  - text: "Tiếp tục trong series ăn uống Đà Lạt, tụi mình sẽ giới thiệu đến các bạn những quán cơm niêu nổi tiếng nhất thành phố, đảm bảo sẽ không làm bạn thất vọng !
+    1. Cơm niêu Như Ngọc
+      Số 1/18 đường Hồ Tùng Mậu (Số cũ: 18/9 đường Trần Phú), Phường 3, TP. Đà Lạt, Lâm Đồng
+      Với tuổi đời hơn 20 năm kinh doanh quán cơm niêu trên đất Đà Lạt, chắc hẳn không cần e ngại về chất lượng món ăn và phục vụ của quán rồi các bạn nhỉ ? Quán có hai chi nhánh đều nằm ở giữa trung tâm thành phố, cực kì tiện lợi. Đặc biệt chi nhánh Hồ Tùng Mậu còn có chỗ để xe khách lớn.
+    2.Cơm Niêu Hương Việt
+      Số 24 đường Sương Nguyệt Ánh, phường 9, TP. Đà Lạt, Lâm Đồng
+      Số 86 đường Trần Đại Nghĩa, Phường 8, Tp Đà Lạt
+      Quán Cơm niêu Hương Việt nằm trên con Sương Nguyệt Ánh, phường 9, mang một nét gì đó rất bình dị và thân thuộc khi đến dùng bữa tại đây."
+ 
+  utter_banh_can:
+  - text: |-  
+      Bánh Căn là một món ăn sáng khá phổ biến ở Đà Lạt. Trên các con đường của thành phố bạn sẽ khá dễ dàng tìm được những quán bán bánh căn. Bởi vì bánh căn được xem làm một trong top 25 món ngon Đà Lạt nhất định phải thưởng thức, một món ăn quá là nổi tiếng.
+        1. Bánh căn Lệ – Quán bánh căn nổi tiếng nhất ở Đà Lạt
+          Địa chỉ: 27/44 Yersin, Phường 10, Thành phố Đà Lạt, Lâm Đồng
+          Thời gian mở cửa: 08:00 – 21:00
+          Mức giá tham khảo: 20.000 – 30.000 VNĐ
+          Thật sự với một đứa mù đường như mình thì bánh căn Lệ quả là một thử thách. Nhưng mà lúc vượt qua thử thách đó mình cảm thấy rất xứng đáng vì đã tìm ra được một quán bán bánh căn cực ngon.
+          Bánh căn Lệ một trong những địa chỉ ăn bánh căn Đà Lạt ngon nhất, nhưng nằm trong con hẻm nhỏ, muốn tìm đúng quán bạn nên hỏi dân địa phương cho chắc nhé. Bánh có nhiều loại nhân như bò bằm, nhân trứng cút, trứng gà, hải sản… tất cả đều rất ngon, chỉ với giá 25k. Mình thích ăn nhất là nhận trứng cút vừa ăn và không quá béo như trứng gà.
+        2. Bánh căn Nhà Chung
+          Địa chỉ: 1 Nhà Chung, Phường 3, Thành phố Đà Lạt, Lâm Đồng
+          Thời gian mở cửa: 7:00 – 21:00
+          Mức giá tham khảo: 20.000 – 40.000 VNĐ
+          Bánh căn được xem là một trong những món ăn sáng Đà Lạt phổ biến nhất và được nhiều thực khách yêu thích. Để thưởng thức bữa sáng với một trong những món ngon Đà Lạt thì bạn hãy đến với quán bánh căn Nhà Chung nhé.
+          Quán nằm ở đầu đường nên cũng khá dễ tìm. Bánh căn ở đây rất ngon, bạn có thể vừa ăn vừa ngồi học làm bánh luôn nhé. Đặc biệt, nước chấm của quán được làm từ xoài xanh, hành phi, mỡ hành cộng thêm chút đậu phộng rất ngon.
+  
+  
+  utter_chao_dem:
+  - text: |- 
+      - Quán Tô Cháo Đêm – Món ăn đêm Đà Lạt nóng hổi
+          Địa chỉ: 112 Phan Đình Phùng, Phường 2, Thành phố Đà Lạt, Lâm Đồng
+          Thời gian mở cửa: 09:00 – 01:00
+          Số điện thoại: 0974 757 540
+          Mức giá tham khảo: 10:00 – 20:00
+          Nhắc đến quán ăn đêm hay ăn khuya ngon ở Đà Lạt thì chắc chắn quán tô cháo đêm là địa điểm không thể nào không điểm qua. Bởi vì hầu như những quán ăn tại các con phố của thành phố mộng mơ thường đóng cửa sớm trước 23h mỗi ngày. Nên chẳng có nhiều chọn lựa khi muốn ăn cái gì đó cho ấm bụng trước khi đi ngủ.
+ 
+ 
+  utter_lau_bo:
+  - text: "Lẩu bò Đà Lạt từ lâu đã là một món ăn rất đặc trưng và không thể thiếu ở thành phố sương mù. Trong cái tiết trời se lạnh, ngồi bên nồi lẩu Đà Lạt thì nghi ngút khói cùng gia đình hay bạn bè thì quả là một cảm giác không thể tả được.
+      1. Lẩu bò vàng đà lạt
+        Địa chỉ: 32-34 đường Hùng vương, Phường 10, TP. Đà Lạt
+        Số điện thoại:  0966 160 416
+        Fanpage: Bò Vàng
+        Giờ mở cửa: 05:30 – 22:00
+        Mức giá tham khảo: 40.000 VNĐ – 300.000 VNĐ
+        Đánh giá: 4,1/5
+        Lẩu Bò nhà hàng Bò Vàng là một gợi ý dành cho những thực khách đang tìm kiếm một quán lẩu bò thơm ngon, đậm đà, giá cả phù hợp tại Thành Phố sương mù Đà Lạt. Quán nằm khá gần trung tâm thành phố, không gian rộng rãi, bày trí đơn giản, gọn gàng, sạch sẽ. Điều làm nên tên tuổi của Nhà hàng Bò Vàng nằm ở món lẩu bò ngon trứ danh của quán. Đừng bỏ qua cơ hội thưởng thức món ngon này bạn nhé.-|
+      2. Quán Xưa – Lẩu Bò Atiso
+        Địa chỉ: 427/ 13 Tô Ngọc Vân Tp, Phan Đình Phùng, Phường 2, Thành phố Đà Lạt, Lâm Đồng
+        Giờ mở cửa: 11:00 – 23:00
+        Mức giá: 39.000 VNĐ – 299.000 VNĐ
+        Fanpage: https://www.facebook.com/Quanxuadalat/
+        Số điện thoại: 091 983 44 44
+        Quán Xưa sử dụng nguồn nguyên liệu tươi ngon, chất lượng, chủ yếu được nhập trực tiếp từ địa phương. Trong đó có thịt bò tơ Đức Trọng tươi ngon, đến bông atiso, 8 loại nấm nông trại hữu cơ Đơn Dương, cùng nhiều loại rau hữu cơ được lấy trực tiếp từ nông trại rau sạch Đà Lạt. Bạn có thể yên tâm về chất lượng các món ăn tại Quán Xưa nè. "
+
   utter_dinhbaodai:
   - text: "Là một dinh thự cổ được xây dựng vào những năm 1930, là nơi sinh sống và làm việc của vua Bảo Đại và gia đình ông"
 
@@ -104,7 +278,7 @@ responses:
 
   utter_chodalat:
   - text: "Là trung tâm mua sắm lớn nhất của thành phố, tại đây du khách có thể tìm thấy các sản phẩm địa phương như trái cây, rau củ, hoa quả khô, đặc sản, quần áo, phụ kiện và đồ thủ công mỹ nghệ"
-    # image: "https://go2joy.s3.ap-southeast-1.amazonaws.com/blog/wp-content/uploads/2022/04/18105731/doi-robin-da-lat-o-dau.jpg"
+    image: "https://taxisanbayre.com/wp-content/uploads/2017/12/Cho-dem-dulichdalat-3.jpg"
   
   utter_hem32:
   - text: "Là một khu phố có nhiều cửa hàng thời trang, phụ kiện, giày dép và đồ gia dụng."
@@ -126,6 +300,7 @@ responses:
     - title: "More about Xuan Huong Lake"
       payload: "/more_info_xuan_huong_lake"
   
+
 #  utter_botgreet:
 #  - text: "Tôi có thể giúp gì cho bạn ?"
   
@@ -140,6 +315,7 @@ responses:
       payload: "/khach_san_da_lat"
     - title: "Những chương trình đi tour ở đà lạt"
       payload: "/di_tour_da_lat"
+  # địa điểm du lịch nổi tiếng ở đà lạt
   utter_destination_generic:
   - text: "Đà Lạt có rất nhiều địa điểm du lịch nổi tiếng"
     buttons:
@@ -151,7 +327,7 @@ responses:
       payload: "/more_info_xuan_huong_lake"
     - title: "Dinh Bảo Đại"
       payload: "/dinh_bao_dai"
-  
+  # địa điểm ăn uống
   utter_food_time:
   - text: "Bạn muốn ăn vào lúc nào"
     buttons:
@@ -161,18 +337,48 @@ responses:
       payload: "/buoi_trua"
     - title: "Buổi tối"
       payload: "/buoi_toi"
+  utter_food_morning:
+  - text: "Với buổi sáng bạn có những sự lựa chọn sau :"
+    buttons:
+      - title: "Bánh ướt lòng gà"
+        payload: "/banh_uot_long_ga"
+      - title: "Bánh mì đà lạt"
+        payload: "/banh_mi_ong_bo"
+      - title: "Bún cối"
+        payload: "/bun_coi"
+
+  utter_food_aftermoon:
+  - text: "Với buổi trưa bạn có những sự lựa chọn sau :"
+    buttons:
+      - title: "Cơm niêu đà lạt"
+        payload: "/com_nieu_da_lat"
+      - title: "Cơm Lam gà nướng"
+        payload: "/cơm_lam_ga_nuong"
+      - title: "Lẩu gà lá é"
+        payload: "/lau_ga_la_e"
+
+  utter_food_everning:
+  - text: "Với buổi tối bạn có những sự lựa chọn sau :"
+    buttons:
+      - title: "Bánh căn đà lạt"
+        payload: "/banh_can_da_lat"
+      - title: "Cháo đêm"
+        payload: "/chao_dem"
+      - title: "Lẩu bò Ba Toa"
+        payload: "/lau_bo_ba_toa"
+  # trang web du lịch
   utter_website:
   - text: "Những trang web về du lịch đà lạt"
     buttons:
-    - title: "vietnamtourism.com"
+    - title: "vietnamtourism.com https://vietnamtourism.com.vn/"
       payload: "https://vietnamtourism.com.vn/"
-    - title: "dalatcity.org"
+    - title: "dalatcity.org https://dalat.vn/"
       payload: "https://dalat.vn/"
-    - title: "dulichdalat.pro"
+    - title: "dulichdalat.pro https://dulichdalat.pro/"
       payload: "https://dulichdalat.pro/"
-    - title: "dalat.travel"
+    - title: "dalat.travel https://dalat.travel/"
       payload: "https://dalat.travel/"
-    - title: "vietnamonline.com"
+    - title: "vietnamonline.com https://www.vietnamonline.com/"
       payload: "https://www.vietnamonline.com/"
   utter_request_again:
   - text: "Bạn cần thông tin gì nữa không"

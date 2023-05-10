@@ -27,6 +27,11 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
+- rule : Hỏi là ai
+  steps:
+  - intent: greet 
+  - action: utter_greet
+
 - rule: Xem thông tin Hồ Xuân Hương
   steps:
   - intent: more_info_xuan_huong_lake
@@ -46,6 +51,77 @@ rules:
   steps:
   - intent: dia_diem_an_uong
   - action: utter_food_time
+
+# - rule: Chọn khách sạn 
+#   steps:
+#   - intent: khach_san_da_lat
+#   - action: utter_hotel
+
+- rule: Chọn địa điểm ăn uống buổi sáng
+  steps:
+  - intent: buoi_sang
+  - action: utter_food_morning
+
+- rule: Chọn địa điểm ăn uống buổi trưa
+  steps:
+  - intent: buoi_trua
+  - action: utter_food_aftermoon
+
+- rule: Chọn địa điểm ăn uống buổi tối
+  steps:
+  - intent: buoi_toi
+  - action: utter_food_everning
+
+
+
+
+- rule: Chọn thông tin bánh ướt lòng gà
+  steps:
+  - intent: banh_uot_long_ga
+  - action: utter_banh_uot_long_ga
+- rule: Xem thông tin bún cối đà lạt
+  steps:
+  - intent: bun_coi
+  - action: utter_bun_coi
+
+- rule: Xem thông tin bánh mì đà lạt
+  steps:
+  - intent: banh_mi_da_lat
+  - action: utter_banh_mi
+
+- rule: Xem thông tin cơm lam gà nuong
+  steps:
+  - intent: com_lam_ga_nuong
+  - action: utter_com_lam
+
+- rule: Xem thông tin lẩu gà lá é
+  steps:
+  - intent: lau_ga_la_e
+  - action: utter_lau_ga
+
+- rule: Xem thông tin cơm niêu đà lạt
+  steps:
+  - intent: com_nieu_da_lat
+  - action: utter_com_nieu
+
+- rule: Xem thông tin bánh căn đà lạt
+  steps:
+  - intent: banh_can_da_lat
+  - action: utter_banh_can
+
+- rule: Xem thông tin cháo đêm đà lạt
+  steps:
+  - intent: chao_dem
+  - action: utter_chao_dem
+
+- rule: Xem thông tin lẩu bò ba toa đà lạt
+  steps:
+  - intent: lau_bo_ba_toa
+  - action: utter_lau_bo
+# - rule: Chọn địa điểm ăn uống buổi tối 
+#   steps:
+#   - intent: buoi_toi
+#   - action: utter_food_everning
 
 - rule: Chọn trang web 
   steps:
