@@ -52,10 +52,10 @@ rules:
   - intent: dia_diem_an_uong
   - action: utter_food_time
 
-# - rule: Chọn khách sạn 
-#   steps:
-#   - intent: khach_san_da_lat
-#   - action: utter_hotel
+- rule: Chọn khách sạn 
+  steps:
+  - intent: khach_san_da_lat
+  - action: utter_hotel
 
 - rule: Chọn địa điểm ăn uống buổi sáng
   steps:
@@ -72,8 +72,14 @@ rules:
   - intent: buoi_toi
   - action: utter_food_everning
 
-
-
+- rule: Chọn khách sạn giá rẻ 
+  steps: 
+  - intent: khach_san_gia_re
+  - action: utter_khach_san_gia_re
+- rule: Chọn khách sạn view_dep 
+  steps: 
+  - intent: khach_san_view_dep
+  - action: utter_khach_san_view_dep
 
 - rule: Chọn thông tin bánh ướt lòng gà
   steps:

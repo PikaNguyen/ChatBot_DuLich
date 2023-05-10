@@ -15,6 +15,8 @@ intents:
 - dia_diem_an_uong
 - thung_lung_tinh_yeu
 - vuon_hoa_thanh_pho
+- khach_san_gia_re
+- khach_san_view_dep
 - buoi_sang
 - buoi_trua
 - buoi_toi
@@ -203,7 +205,6 @@ responses:
           Mức giá tham khảo: 10:00 – 20:00
           Nhắc đến quán ăn đêm hay ăn khuya ngon ở Đà Lạt thì chắc chắn quán tô cháo đêm là địa điểm không thể nào không điểm qua. Bởi vì hầu như những quán ăn tại các con phố của thành phố mộng mơ thường đóng cửa sớm trước 23h mỗi ngày. Nên chẳng có nhiều chọn lựa khi muốn ăn cái gì đó cho ấm bụng trước khi đi ngủ.
  
- 
   utter_lau_bo:
   - text: "Lẩu bò Đà Lạt từ lâu đã là một món ăn rất đặc trưng và không thể thiếu ở thành phố sương mù. Trong cái tiết trời se lạnh, ngồi bên nồi lẩu Đà Lạt thì nghi ngút khói cùng gia đình hay bạn bè thì quả là một cảm giác không thể tả được.
       1. Lẩu bò vàng đà lạt
@@ -221,7 +222,39 @@ responses:
         Fanpage: https://www.facebook.com/Quanxuadalat/
         Số điện thoại: 091 983 44 44
         Quán Xưa sử dụng nguồn nguyên liệu tươi ngon, chất lượng, chủ yếu được nhập trực tiếp từ địa phương. Trong đó có thịt bò tơ Đức Trọng tươi ngon, đến bông atiso, 8 loại nấm nông trại hữu cơ Đơn Dương, cùng nhiều loại rau hữu cơ được lấy trực tiếp từ nông trại rau sạch Đà Lạt. Bạn có thể yên tâm về chất lượng các món ăn tại Quán Xưa nè. "
+ 
+  utter_khach_san_gia_re:
+  - text: |- 
+      Lựa chọn khách sạn Đà Lạt ưng ý lại còn ở gần địa điểm tham quan nổi tiếng là bước đầu tiên tạo nên kỳ nghỉ hoàn hảo. Chọn khách sạn Đà Lạt nào để chuyến đi vừa tiết kiệm vừa đảm bảo tiện nghi? Tham khảo các khách sạn ở Đà Lạt giá rẻ, hiện đại và gần trung tâm nhé.
+        1.Khách Sạn Iris Đà Lạt
+          Trong ấn tượng ban đầu,  gợi nhớ về kiến trúc Châu Âu của thế kỷ trước - với những đường nét hoa văn tinh tế sắc màu trắng rất “nịnh mắt”. Bên trong các phòng nghỉ, nội thất cao cấp được bày trí sao cho tối ưu hoá không gian sử dụng nhưng không đánh mất rung cảm hoài cổ - từ tranh sơn dầu, đệm đầu giường đến đèn ngủ với chụp đèn phủ vải hoa. Khách sạn Đà Lạt tiêu chuẩn 4 sao này nằm cách chợ Đà Lạt và các địa điểm du lịch trung tâm chỉ tầm 100 mét. Bạn có thể thoả thích trải nghiệm mà vẫn được tận hưởng phút giây nghỉ dưỡng riêng tư.    
+          Địa chỉ: 20 Phan Như Thạch, Phường 1, Thành phố Đà Lạt, Lâm Đồng
+          Giá tham khảo: từ 627.000đ/đêm
+        2.N'Queen Villa Đà Lạt
+          Chỉ cách Hồ Xuân Hương trên dưới 700 mét,  “gây thương nhớ” với thiết kế tinh tế và hướng về thiên nhiên. Mỗi một phòng nghỉ ở N'Queen Villa sở hữu một năng lượng riêng; điều này khiến cho kỳ nghỉ tại khách sạn Đà Lạt này trở nên thật khác biệt, dù bạn là lần đầu tiên đến hay đã là “khách quen”. Trong khi các căn hộ dạng Studio là lựa chọn yêu thích của người đi du lịch Đà Lạt một mình hoặc các cặp đôi, nhiều gia đình trẻ lại chọn trải nghiệm căn hộ áp mái và căn hộ Superior. Đưa nhiều chi tiết bản địa vào tinh thần thiết kế, ở N'Queen Villa còn có rất nhiều “góc check-in ảo diệu”, mang đến cho bạn bộ ảnh “nghìn likes” trên mạng xã hội.
+          Địa chỉ: 37 Đường Yersin, Phường 10, Đà Lạt, Việt Nam
+          Giá tham khảo: từ 1.600.000đ/đêm
 
+  utter_khach_san_view_dep:
+  - text: |- 
+      Hiện giờ Đà Lạt cũng có rất nhiều khách sạn view đẹp ở Đà Lạt giá rẻ. Bời xu thế hiện giờ du khách đến Đà Lạt ngày càng đông. Những khách sạn 1 2 sao Đà Lạt mới xây phòng ôc sạch sẽ thoáng mát. Mỗi căn phòng đều được trang bị những trang thiết bị tiện nghi nhất. Cùng với đó là mỗi phòng thường có ban công với view đẹp tuyệt vời. Để cạnh tranh với những khách sạn 3 4 5 sao khác.
+        1.Dalat Serene Villa
+          Đà Lạt được biết đến là thiên đường nghỉ dưỡng. Nơi có khí hậu mát mẻ, không khí trong lành mà ai ai đến cũng đều thích. Vì vậy nên nơi đây ngày càng có nhiều khách sạn mới được xây dựng nhằm đón du khách đến với Đà Lạt. Hầu như du khách nào cũng đều thích những khách sạn mới, sạch và đẹp..    
+          Địa chỉ: 20 Phan Như Thạch, Phường 1, Thành phố Đà Lạt, Lâm Đồng
+          Địa chỉ: 15C/6 đường Hai Bà Trưng, phường 6 Tp. Đà Lạt
+          Hotline đặt phòng: 0263 3517 979
+          Fanpage: https://www.facebook.com/DalatSerene
+          Bạn có thể tham khảo bài reiew chi tiết ở link bài viết này
+          Mức giá tham khảo: 350.000 – 500.000 VNĐ
+          
+        2.Memory inn Dalat
+          Tuy là một cái tên mới xuất hiện không lâu nhưng đã thu hút rất nhiều sự chú ý của du khách gần xa. Tọa lạc trên cung đường 3 tháng 4, rất gần các địa điểm check in nổi tiếng. Và gần các quán ăn ngon được đánh giá cao tại Đà Lạt. Có thể nói, đây chính là điểm dừng chân vô cùng phù hợp với du khách.
+          Địa chỉ: Số 3B/10 đường Ba Tháng Tư, Phường 3, Tp Đà Lạt
+          Hotline : 0817306306
+          Fanpage: fb.com/memoryinndalat
+          Xem chi tiết bài viết tại link này.
+          Mức giá tham khảo: 400.000 – 350.000 VNĐ
+    
   utter_dinhbaodai:
   - text: "Là một dinh thự cổ được xây dựng vào những năm 1930, là nơi sinh sống và làm việc của vua Bảo Đại và gia đình ông"
 
@@ -240,10 +273,11 @@ responses:
 
   utter_quancomgaBaHanh:
   - text: "là quán cơm gà nổi tiếng và được yêu thích ở Đà Lạt, nơi đây có nhiều món ăn ngon như cơm gà, gà chiên giòn, bánh canh, nui..."
+    image: "https://d1sag4ddilekf6.cloudfront.net/compressed_webp/items/VNITE2021031604474094579/detail/menueditor_item_8964c56b430348c4a5940d0c9dbacd50_1618302615907075067.webp"
 
   utter_quancheThanhThao:
   - text: "là quán chè đặc trưng ở Đà Lạt, quán có nhiều loại chè đặc sản như chè khoai lang, chè đỗ đen, chè đậu xanh, chè sen..."
-
+    image: "https://dalattodaytravel.com/wp-content/uploads/2022/12/menu-kem-bo-thanh-thao-da-lat.jpg"
   utter_nhahangngonVilla:
   - text: "là một nhà hàng cao cấp, phục vụ các món ăn Á và Âu, có không gian sang trọng, tuyệt đẹp, đặc biệt là từ nhà hàng có thể ngắm nhìn toàn cảnh Đà Lạt."
 
@@ -252,10 +286,11 @@ responses:
 
   utter_banhtrangnuong:
   - text: "Là món ăn đặc sản được nhiều du khách yêu thích ở Đà Lạt. Bánh tráng nướng Đà Lạt có hương vị độc đáo, thơm ngon và được chế biến trên đĩa nướng đặc biệt trên than hoa."
-
+    image: "https://cdn.tgdd.vn/Files/2017/03/12/960051/cach-lam-banh-trang-nuong-ngon-cuc-nhanh-voi-chao-chong-dinh-202112282139542041.jpg"
+  
   utter_cafeVuon:
   - text: "là quán cafe yên tĩnh, có không gian rộng, được trang trí đẹp mắt với không gian mở, tạo cảm giác thư giãn, được nhiều du khách yêu thích để thưởng thức cafe và tán gẫu."
-  
+    image: "https://go2joy.s3.ap-southeast-1.amazonaws.com/blog/wp-content/uploads/2022/09/26170324/chill-corner-ca-phe-san-vuon1.jpg"
   utter_baodai:
   - text: "Dinh Bảo Đại được xây dựng vào những năm 1930 và là nơi sinh sống của Hoàng đế cuối cùng của triều đại Nguyễn. Hiện nay, dinh Bảo Đại là một điểm tham quan phổ biến cho du khách, nơi để tìm hiểu về lịch sử và văn hóa của Đà Lạt."
     image: "https://disantrangan.vn/wp-content/uploads/2021/09/dinh_bao_dai_da_lat_05.jpg"
@@ -311,7 +346,7 @@ responses:
       payload: "/dia_diem_du_lich"
     - title: "Các địa điểm ăn uống"
       payload: "/dia_diem_an_uong"
-    - title: "Các khách sạn view đẹp ở đà lạt"
+    - title: "Các khách sạn ở đà lạt"
       payload: "/khach_san_da_lat"
     - title: "Những chương trình đi tour ở đà lạt"
       payload: "/di_tour_da_lat"
@@ -337,6 +372,18 @@ responses:
       payload: "/buoi_trua"
     - title: "Buổi tối"
       payload: "/buoi_toi"
+  
+
+  # địa điểm khách sạn
+  utter_hotel:
+  - text: "Bạn muốn chọn khách sạn như thế nào"
+    buttons:
+    - title: "Khách sạn giá rẻ"
+      payload: "/khach_san_gia_re"
+    - title: "Khách sạn view đẹp"
+      payload: "/khach_san_view_dep"
+
+
   utter_food_morning:
   - text: "Với buổi sáng bạn có những sự lựa chọn sau :"
     buttons:
