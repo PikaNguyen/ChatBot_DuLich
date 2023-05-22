@@ -52,15 +52,22 @@ rules:
   - intent: dia_diem_an_uong
   - action: utter_food_time
 
-- rule: Chọn khách sạn 
-  steps:
-  - intent: khach_san_da_lat
-  - action: utter_hotel
+
 
 - rule: Chọn địa điểm ăn uống buổi sáng
   steps:
   - intent: buoi_sang
   - action: utter_food_morning
+
+- rule: Chọn đặc sản đà lạt
+  steps:
+  - intent: dac_san_da_lat
+  - action: utter_nong_san_dac_san
+
+- rule: Chọn nông sản đà lạt
+  steps:
+  - intent: nong_san_da_lat
+  - action: utter_nong_san_da_lat
 
 - rule: Chọn địa điểm ăn uống buổi trưa
   steps:
@@ -72,6 +79,11 @@ rules:
   - intent: buoi_toi
   - action: utter_food_everning
 
+- rule: Chọn khách sạn 
+  steps:
+  - intent: khach_san_da_lat
+  - action: utter_hotel
+  
 - rule: Chọn khách sạn giá rẻ 
   steps: 
   - intent: khach_san_gia_re
@@ -80,6 +92,41 @@ rules:
   steps: 
   - intent: khach_san_view_dep
   - action: utter_khach_san_view_dep
+
+- rule: Chọn thông tin dâu tây đà lạt
+  steps:
+  - intent: dau_tay_da_lat
+  - action: utter_dau_tay_da_lat
+
+- rule: Chọn thông tin trà atiso đà lạt
+  steps:
+  - intent: tra_atiso_da_lat
+  - action: utter_tra_atiso_da_lat
+
+- rule: Chọn thông tin dâu tầm đà lạt
+  steps:
+  - intent: dau_tam_da_lat
+  - action: utter_dau_tam_da_lat
+
+- rule: Chọn thông tin hồng treo gió đà lạt
+  steps:
+  - intent: hong_da_lat
+  - action: utter_hong_da_lat
+
+- rule: Chọn thông tin rau củ sấy đà lạt
+  steps:
+  - intent: rau_cu_say_da_lat
+  - action: utter_rau_cu_say_da_lat
+
+- rule: Chọn thông tin bơ đà lạt
+  steps:
+  - intent: bo_da_lat
+  - action: utter_bo_da_lat
+
+- rule: Chọn thông tin chuối đà lạt
+  steps:
+  - intent: chuoi_da_lat
+  - action: utter_chuoi_da_lat
 
 - rule: Chọn thông tin bánh ướt lòng gà
   steps:

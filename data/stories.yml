@@ -19,11 +19,13 @@ stories:
   - action: utter_destination_generic
   - intent: chon_dia_diem_du_lich
   - action: utter_request_again
+  - intent: nong_san_dac_san_da_lat
+  - action: utter_specialty_generic
   - intent: affirm
   - action: utter_genericInfo
   - intent: deny
   - action: utter_thanks
-
+  
 - story: happy destination_specific path
   steps:
   - intent: dia_diem_du_lich
@@ -32,7 +34,10 @@ stories:
   - action: utter_request_again
   - intent: deny
   - action: utter_thanks
-
+- story: địa điểm du lịch đặc sản
+  steps:
+  - intent: nong_san_dac_san_da_lat
+  - action: utter_specialty_generic
 - story: happy food path
   steps:
   - intent: greet

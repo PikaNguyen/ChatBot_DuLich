@@ -20,6 +20,16 @@ intents:
 - buoi_sang
 - buoi_trua
 - buoi_toi
+- nong_san_dac_san_da_lat
+- dac_san_da_lat
+- nong_san_da_lat
+- dau_tay_da_lat
+- tra_atiso_da_lat
+- dau_tam_da_lat
+- hong_da_lat
+- rau_cu_say_da_lat
+- bo_da_lat
+- chuoi_da_lat
 - banh_uot_long_ga
 - bun_coi
 - banh_mi_da_lat
@@ -72,6 +82,7 @@ responses:
 
   utter_thung_lung:
   - text: "Thung Lũng Tình Yêu là một trong những thắng cảnh thơ mộng nhất tại Đà Lạt, cách trung tâm thành phố khoảng 5 km về phía bắc"
+  
    
   utter_vuon_hoa:
   - text: "Vườn hoa thành phố Đà Lạt là một trong những địa điểm du lịch vô cùng nổi tiếng ở Đà Lạt. Phong cảnh hữu tình với địa điểm du lịch, tham quan nổi tiếng. Một trong những địa điểm mà du khách không thể bỏ qua, hãy đến Vườn hoa thành phố."
@@ -194,8 +205,105 @@ responses:
           Mức giá tham khảo: 20.000 – 40.000 VNĐ
           Bánh căn được xem là một trong những món ăn sáng Đà Lạt phổ biến nhất và được nhiều thực khách yêu thích. Để thưởng thức bữa sáng với một trong những món ngon Đà Lạt thì bạn hãy đến với quán bánh căn Nhà Chung nhé.
           Quán nằm ở đầu đường nên cũng khá dễ tìm. Bánh căn ở đây rất ngon, bạn có thể vừa ăn vừa ngồi học làm bánh luôn nhé. Đặc biệt, nước chấm của quán được làm từ xoài xanh, hành phi, mỡ hành cộng thêm chút đậu phộng rất ngon.
+
+  utter_dau_tay_da_lat:
+  - text: |- 
+      - Dâu tây Đà Lạt là đặc sản mà bất cứ du khách nào cũng muốn mua làm quà cho người thân mỗi lần đến với Đà Lạt. Dâu tây rất dễ “chiều lòng” người nhận bởi sự đa dạng hiếm có: Nào là có thể ăn tươi, lắc với đường hoặc muối, làm mứt dâu, làm đẹp hay là xay sinh tố, ép nước uống…
+        Dâu tây Đà Lạt từ lâu đã trở thành “đặc sản” mà bất cứ ai cũng đều mặc định mua làm quà mỗi lần ghé thăm Đà Lạt. Khí hậu, thổ nhưỡng tại thành phố Cao Nguyên này cho chất lượng cũng như mùi vị trái dâu rất đặc biệt. Hiện nay, tại Đà Lạt có khá nhiều giống dâu tây được trồng (cả ngoài trời và canh tác trong nhà kính), Dalavi trân trọng mang đến cho quý khách hàng giống dâu được nhiều người lựa chọn nhất hiện nay: Dâu tây Đà Lạt giống Mỹ Đá. Dâu tây được DaLaVi chia thành 04 loại:
+        - Size A (trung bình 80 trái/kg), giá lẻ: 280.000đ
+        - Size B (trung bình 95 trái/kg), giá lẻ: 230.000đ
+        - Size C (trung bình 120 trái/kg), giá lẻ: 190.000đ
+        - Quy cách đóng: Dâu A, B – 1kg/hộp; Dâu C: 3kg/hộp
+        - Mua sỉ, vui lòng truy cập: https://dautaydalat.vn/dau-tay-da-lat-gia-si
+    image: "https://dacsandalat.com.vn/wp-content/uploads/2017/05/z1270464562788_1f043e397ace4267bef62a839ec15c2b.jpg"
+
+  utter_dau_tam_da_lat:
+  - text: |- 
+      - Dâu tằm là cái tên rất đỗi quen thuộc với mỗi người dân Việt Nam. Dâu tằm thường xuất hiện vào cuối Xuân đầu Hạ, rơi vào cuối tháng 3 đầu tháng 4 hàng năm. Cây được trồng khắp nơi trong nước ta lấy lá nuôi tằm, làm thuốc. Ở miền Bắc, dâu được trồng nhiều ở ngoài bãi sông: sông Hồng, sông Đáy, sông Thái Bình. Ở miền Nam, dâu được trồng nhiều ở tỉnh Lâm Đồng, ngày nay dâu tằm Đà Lạt đã trở nên nổi tiếng: Là nông sản tươi được nhiều đối tác lớn đặt hàng bởi nhiều công dụng mà loại cây này mang lại.
+        Dâu tằm tươi được canh tác đạt chuẩn, cho năng suất cao. Quy trình hái dâu, phân loại và đóng gói chuyên nghiệp giúp sản phẩm đến được với hầu hết các tỉnh thành tại Việt Nam. 
+        - Dâu tằm tươi: 70.000đ/kg, tối thiểu 6kg
+        - Hũ dâu tằm sơ chế: chỉ việc dùng (ngâm rượu, ngâm đường, ăn sống…)
+        - Hũ dâu tằm ngâm đường: 5kg, 4kg, 3kg hoặc theo yêu cầu
+        - Vùng trồng: Đức Trọng, Đà Lạt, Lạc Dương
+        Công dụng của dâu tằm:
+        - Sở dĩ gọi dâu tằm là “tiên dược” bởi hiếm có loại cây nào như dâu tằm có thể ứng dụng hầu hết các bộ phận của cây vào việc chữa bệnh. Cụ thể:
+        - Vỏ rễ dâu có khả năng chữa ho, ho ra máu, phù thũng, đi tiểu ít… bằng cách dùng 4 – 12g cho vào sắc để uống mỗi ngày.
+        - Lá dâu có thể chữa cảm mạo, ho, họng đau, nhức đầu, mắt đỏ, chảy nước mắt, phát ban, huyết áp cao, mồ hôi trộm. Ngày dùng 4 – 12g, dạng thuốc sắc.
+        - Cành dâu non cũng được dùng để chữa tê thấp, chân tay co quắp. Ngày dùng 20 – 40g, dạng thuốc sắc.
+        - Quả dâu tằm có khả năng chữa bệnh tiểu đường, lao hạch, mắt mờ, ù tai, thiếu máu. Nước quả Dâu cô thành cao. Ngày uống 3 lần, mỗi lần 5g. Liều dùng từ 12 – 20g.
+        - Đặc biệt, các bộ phận tưởng vô dụng như tầm gửi trên cây dâu cũng có thể trị các chứng phong thấp, tê bại, đau lưng, mỏi gối. Trị động thai, đau bụng. Ngày dùng 12-20g.
+        - Mua sỉ, vui lòng truy cập: https://dautamdalat.com/san-pham/dau-tam-tuoi/
+    image: "https://dautamdalat.com/wp-content/uploads/2020/03/dau-tam-tuoi-da-lat.jpg"
   
+  utter_tra_atiso_da_lat:
+  - text: |- 
+      - Cây atiso là một loại cây có gai lâu năm có nguồn gốc miền Nam Châu Âu hiện ở Việt Nam Atiso được trồng nhiều ở Đà lạt, Sapa, Tam Đảo. Thực chất, đây được coi là một cây thuốc quý. Bởi lẽ hầu hết các bộ phận của cây Atiso như rễ, lá, thân, hoa,.. đều có thể sử dụng một cách có ích với sức khỏe con người như trà thảo mộc, các món ăn, thảo dược,…
+      Thời tiết ở Đà Lạt mát mẻ, đất đai màu mỡ lại có những phương pháp canh tác tiên tiến nên trồng cây atiso bội thu và người dân ở đây sử dụng atiso để chế biến ra rất nhiều loại sản phẩm như: mứt, trà, cao,…đều mang đến những lợi ích tốt cho sức khỏe.
+      - Nhắc đến Đà Lạt, ngoài cảnh sắc thiên nhiên thơ mộng thì thành phố sương mù này còn có những món quà đặc sản tuy đơn giản nhưng thu hút khách du lịch. Trong đó trà atiso Đà Lạt là sản phẩm nổi tiếng được đông đảo du khách biết đến nhất. Nhưng mua ở đâu để có được những túi trà atiso nguyên chất, chất lượng mà giá cả lại phải chăng?
+        1.Ladophar là đơn vị nổi tiếng có các cửa hàng lớn có mặt trên nhiều tỉnh thành tại Việt Nam. Trà Atiso Đà Lạt Ladophar được sản xuất từ 100% atiso tự nhiên, không pha tạp, không chất bảo quản, trải qua quá trình phơi sấy, đóng gói hiện đại, đảm bảo chất lượng vệ sinh an toàn thực phẩm. Bạn có thể tới địa chỉ gần nhất ở thành phố Đà Lạt để mua trà atiso ngon. Địa chỉ cụ thể mà bạn có thể tới ngay nếu ở Đà Lạt là số 18 Ngô Quyền, thành phố Đà Lạt.
+        2.Trà atiso Vĩnh Tiến
+        Thương hiệu này là một địa chỉ sản xuất trà Atiso nổi tiếng ở Đà Lạt trong nhiều năm qua, được người tiêu dùng biết đến, ưa chuộng và đánh giá cao về chất lượng. Ở đây có nhiều loại trà atiso cho khách hàng lựa chọn như trà atiso dạng túi, dạng đóng chai, cao atiso, Atiso bột, Atiso hòa tan, Bông Atiso sấy khô…Người tiêu dùng đánh giá chất lượng trà ở đây ngon, sạch sẽ, tốt cho sức khỏe và hương vị thì miễn chê. 
+        3.Trà atiso L’angfarm
+        Hiện nay, L’angfarm là chuỗi các cửa hàng bán đặc sản Đà Lạt uy tín, chất lượng, là thương hiệu đặc sản Đà Lạt hàng đầu, cung cấp sản phẩm nông sản chế biến chất lượng cao, an toàn, tin cậy, phải chăng, đẹp mắt, hài lòng. Riêng ở thành phố Đà Lạt đã có nhiều nơi để bạn ghé vào mua trà atiso như ở Số 6 Nguyễn Thị Minh Khai, Phường 1, thành phố Đà Lạt và nó cũng có một hệ thống các cửa hàng rải rác khắp đất nước bạn có thể dễ dàng ghé mua. 
+    image: "https://reviewvilla.vn/wp-content/uploads/2022/05/Tra-atiso-Da-Lat-12-2.jpg"
+  utter_hong_da_lat:
+  - text: |- 
+      - Bắt nguồn từ xứ sở hoa anh đào, hồng treo gió là loại hồng được treo cao lúc quả hồng chưa chín trong vài ngày để tạo thành mứt hồng dẻo cực thơm ngon. Với cách làm khá kỳ công và lạ mắt, hồng treo gió được khá nhiều người ưa thích mua về để thưởng thức cũng như tặng người thân, bạn bè.
+        Trên thị trường hiện nay, hồng treo gió đang được bán với mức giá khá hợp lý dao động khoảng 280.000 đồng đến 320.000 đồng cho 1 kí.
+      - Hiện nay, có rất nhiều nơi bán hồng treo gió nhưng không biết có đảm bảo an toàn và chất lượng.
+        Chính vì vậy, bạn nên mua hồng treo gió có nguồn gốc, ngày sản xuất rõ ràng và những địa điểm mua bán sau ở Đà Lạt và TP.HCM để nhận được những sản phẩm tốt nhất nhé.
+
+          1.L'ang Farm - Điện thoại 19009065. Địa chỉ: 128 Nguyễn Văn Cừ, phường Nguyễn Cư Trinh, Quận 1, TP.HCM
+
+          2.Dalavi - Điện thoại 0914.107.107. Địa chỉ: 27/6E Yersin, phường 10, thành phố Đà Lạt
+
+          3.Hồng sấy gió Trạm Hành. Địa chỉ: 007 Trạm Hành 1, Xã Trạm Hành, Đà Lạt
+
+    image: "https://cdn.tgdd.vn/Files/2021/10/06/1388175/hong-treo-gio-da-lat-bao-nhieu-tien-mot-ki-mua-o-dau-chat-luong-an-toan-202110061206389186.jpg"
+    
+
+  utter_rau_cu_say_da_lat:
+  - text: |- 
+      - Chắc chẳng còn lạ gì khi đa số những ai đi chơi Đà Lạt về cũng mang theo vài túi rau củ sấy về làm quà cho gia đình và người thân. Không chỉ vì hương vị thơm ngon, mà những thành phần trong một túi rau củ sấy Đà Lạt rất đa dạng, từ mít, chuối, đậu que, khổ qua, cà rốt, khoai lang tím, khoai môn, …. rất rất nhiều. Và chúng đều là những quả rất có lợi cho sức khỏe con người.
+      - Nếu bạn có một đứa con không thích ăn rau củ và sợ thiếu chất, thì rau củ sấy sẽ là giải pháp vô cùng hữu hiệu cho bạn. Hương vị ngọt ngọt, bùi bùi, giòn tan trong miệng chính là những thứ khiến rau củ sấy Đà Lạt nổi danh trên thị trường ăn uống nước ta.
+        Chính vì vậy, bạn nên mua rau củ sấy có nguồn gốc, ngày sản xuất rõ ràng và những địa điểm mua bán sau ở Đà Lạt và TP.HCM để nhận được những sản phẩm tốt nhất nhé.
+
+          1.L'ang Farm - Điện thoại 19009065. Địa chỉ: 128 Nguyễn Văn Cừ, phường Nguyễn Cư Trinh, Quận 1, TP.HCM
+
+          2.Dalavi - Điện thoại 0914.107.107. Địa chỉ: 27/6E Yersin, phường 10, thành phố Đà Lạt
+
+          3.Hồng sấy gió Trạm Hành. Địa chỉ: 007 Trạm Hành 1, Xã Trạm Hành, Đà Lạt
+
+    image: "https://blog.muaban.net/wp-content/uploads/2019/04/nong-san-Anh-5.jpg"
   
+  utter_bo_da_lat:
+  - text: |- 
+      - Nói đến bờ thì chắc chắn rằng ai cũng sẽ nhớ đến Đà Lạt. Nổi tiếng với bơ sáp thơm ngon hay bơ 036 trứ danh nổi tiếng cả trong và ngoài nước. Ở Đà Lạt có 3 loại bơ chính đó là bơ 036, bơ Booth7 và bơ Hass. Tuy 036 được đánh giá là ngon nhất nhưng 2 loại kia cũng không thua kém gì về chất lượng và đã trở thành loại nông sản đặc trưng vô cùng nổi tiếng của Đà Lạt.
+      - Những quả bơ tại Đà Lạt luôn có lớp vỏ sần sùi, sáng bóng, quả chắc tay và trọng lượng khá nặng. Kích thước quả lớn nhưng hạt lại nhỏ, hương vị thơm ngon, vị béo và bùi vô cùng đậm đà khiến mỗi quả bơ được mua tại đây luôn rất đáng đồng tiền.
+        Chính vì vậy, bạn nên mua rau củ sấy có nguồn gốc, ngày sản xuất rõ ràng và những địa điểm mua bán sau ở Đà Lạt và TP.HCM để nhận được những sản phẩm tốt nhất nhé.
+
+          1.L'ang Farm - Điện thoại 19009065. Địa chỉ: 128 Nguyễn Văn Cừ, phường Nguyễn Cư Trinh, Quận 1, TP.HCM
+
+          2.Dalavi - Điện thoại 0914.107.107. Địa chỉ: 27/6E Yersin, phường 10, thành phố Đà Lạt
+
+          3.Hồng sấy gió Trạm Hành. Địa chỉ: 007 Trạm Hành 1, Xã Trạm Hành, Đà Lạt
+
+    image: "https://blog.muaban.net/wp-content/uploads/2019/04/nong-san-Anh-1.jpg"
+
+  utter_chuoi_da_lat:
+  - text: |- 
+      - Chuối Laba là loại quả vô cùng nổi tiếng với lịch sử lâu dài (hơn 20 năm cắm rễ tại thành phố mộng mơ). Người dân ở đây còn kể lại rằng: từ khi khai khẩn đất hoang tại Đà Lạt nhiều người đã mang loại cây này lên đây, và vô tình quả chuối Laba tại Đà Lạt phát triển rất tốt và rất được ưa thích.
+      - Chuối Laba được xem như loại nông sản quý, vì sự bổ dưỡng của nó, quả có hương bị đậm đà, thịt dễ và rất thơm, buồng chuối khá dài, trái thon và hơi cong, màu chuối khi chín ngã vàng rất ưng mắt. 
+        Chính vì vậy, bạn nên mua rau củ sấy có nguồn gốc, ngày sản xuất rõ ràng và những địa điểm mua bán sau ở Đà Lạt và TP.HCM để nhận được những sản phẩm tốt nhất nhé.
+
+          1.L'ang Farm - Điện thoại 19009065. Địa chỉ: 128 Nguyễn Văn Cừ, phường Nguyễn Cư Trinh, Quận 1, TP.HCM
+
+          2.Dalavi - Điện thoại 0914.107.107. Địa chỉ: 27/6E Yersin, phường 10, thành phố Đà Lạt
+
+          3.Hồng sấy gió Trạm Hành. Địa chỉ: 007 Trạm Hành 1, Xã Trạm Hành, Đà Lạt
+
+    image: "https://blogcdn.muaban.net/wp-content/uploads/2019/04/nong-san-Anh-2.jpg"
+
   utter_chao_dem:
   - text: |- 
       - Quán Tô Cháo Đêm – Món ăn đêm Đà Lạt nóng hổi
@@ -348,8 +456,9 @@ responses:
       payload: "/dia_diem_an_uong"
     - title: "Các khách sạn ở đà lạt"
       payload: "/khach_san_da_lat"
-    - title: "Những chương trình đi tour ở đà lạt"
-      payload: "/di_tour_da_lat"
+    - title: "Các đặc sản nông sản ở Đà Lạt"
+      payload: "/nong_san_dac_san_da_lat"
+ 
   # địa điểm du lịch nổi tiếng ở đà lạt
   utter_destination_generic:
   - text: "Đà Lạt có rất nhiều địa điểm du lịch nổi tiếng"
@@ -362,6 +471,16 @@ responses:
       payload: "/more_info_xuan_huong_lake"
     - title: "Dinh Bảo Đại"
       payload: "/dinh_bao_dai"
+
+  # nông sản, đặc sản đà lạt
+  utter_specialty_generic:
+  - text: "Đặc sản, nông sản Đà Lạt là một món quà không thể thiếu khi bạn đến với Thành phố Ngàn Hoa. Nhưng nên mua gì? Mua ở đâu? Có lẻ sẽ khá khó, đây cũng chính là câu hỏi mà bên mình thường được nghe.Dưới đây là một vài gợi ý giành cho bạn :"
+    buttons:
+    - title: "Nông sản đà lạt"
+      payload: "/nong_san_da_lat"
+    - title: "Đặc sản đà lạt"
+      payload: "/dac_san_da_lat"
+  
   # địa điểm ăn uống
   utter_food_time:
   - text: "Bạn muốn ăn vào lúc nào"
@@ -383,7 +502,37 @@ responses:
     - title: "Khách sạn view đẹp"
       payload: "/khach_san_view_dep"
 
+  
+  #option đặc sản đà lạt 
+  utter_nong_san_dac_san:
+  - text: "Đặc sản Đà Lạt làm quà là những món ngon nổi tiếng vô cùng hấp dẫn. Không chỉ ở Việt Nam mà ngay cả những khách nước ngoài cũng đều muốn thử qua. Nếu du khách muốn mua được những loại đặc sản ở Đà Lạt ngon. Du khách có thể tìm hiểu những sự lựa chọn dưới đây :"
+    buttons:
+    - title: "Dâu tây đà lạt"
+      payload: "/dau_tay_da_lat"
+    - title: "Dâu tằm đà lạt"
+      payload: "/dau_tam_da_lat"
+    - title: "Trà Atiso đà lạt"
+      payload: "/tra_atiso_da_lat"
+    - title: "Hồng treo gió đà lạt"
+      payload: "/hong_da_lat"
 
+  utter_nong_san_da_lat:
+  - text:  |- 
+      - Khi nhắc đến Đà Lạt thì ai trong số chúng ta cũng đều liên tưởng đến một vùng đất có khí hậu ôn hòa và rất nhiều cảnh đẹp. Và cũng không ít người sẽ nghĩ ngay đến những món đặc sản nổi tiếng của nơi đây. Trong số đó thì nông sản Đà Lạt là một trong những sản phẩm được rất nhiều người yêu mến. Nhờ vào khí hậu ôn hòa rất thích hợp để các loại rau củ quả phát triển tốt nhất. Cũng vì lẽ đó mà các loại nông sản tại Đà Lạt luôn là sự lựa chọn hàng đầu của không ít bà nội trợ. Không những thế đây cũng là sản phẩm có mật độ phân bố rộng khắp các tỉnh thành tại Việt Nam.
+        1. Tại sao nông sản Đà Lạt lại có độ tươi ngon đến như thế?
+          Có thể nói thiên nhiên đã ban tặng cho Đà Lạt một bầu không khí vô cùng mát mẻ, ôn hòa. Đây cũng chính là điều kiện để cho các loại rau củ quả tại địa phương này phát triển tươi tốt và có hương vị đặc trưng riêng. Không những thế điều kiện thổ nhưỡng và nguồn nước cũng đã giúp tạo nên thương hiệu nông sản của Đà Lạt. Chính nhờ vào 2 điều kiện này đã khiến cho nông sản trồng tại Đà Lạt có độ tươi tốt, thơm ngon hơn hẳn những địa phương khác.
+        2. Những lý do giúp cho nông sản Đà Lạt trở thành sự lựa chọn hàng đầu
+          Còn riêng đối với nông sản Đà Lạt thì luôn đảm bảo trồng và chăm sóc theo đúng tiêu chuẩn quốc tế. Chất lượng của sản phẩm luôn là tiêu chí mà những người nông dân tại Đà Lạt theo đuổi trong quá trình tạo ra các loại nông sản. Cũng chính vì thế mà khi sử dụng các loại sản phẩm nông sản từ Đà Lạt bạn hoàn toàn yên tâm về chất lượng, bởi chúng luôn mang đến những lợi ích tuyệt vời cho sức khỏe của chúng ta trong từng bữa ăn.
+        3. 3 loại nông sản nổi tiếng khi đến đà lạt
+    buttons:
+    - title: "Rau củ sấy Đà Lạt"
+      payload: "/rau_cu_say_da_lat"
+    - title: "Bơ Đà Lạt"
+      payload: "/bo_da_lat"
+    - title: "Chuối Laba Đà Lạt"
+      payload: "/chuoi_da_lat"
+  
+  # option sáng trưa tối 
   utter_food_morning:
   - text: "Với buổi sáng bạn có những sự lựa chọn sau :"
     buttons:
