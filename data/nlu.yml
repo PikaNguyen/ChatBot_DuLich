@@ -40,19 +40,13 @@ nlu:
     - tạm biệt em
     - tạm biệt bot nhá
 
-- intent: genericInfo
-  examples: |
-    - Hãy cho tôi thông tin chung
-    - Các thông tin bạn có
-    - Thông tin
-    - Infomation
-    - info
-    - Gợi ý
-    - hint
-    - goi y
-
 - intent: what_do_you_have
   examples: |
+    - Bắt đầu
+    - Gợi ý
+    - Bat dau
+    - Goi y
+    - bat dau
     - Bạn có thể làm được gì ?
     - Cho tôi thông tin bạn có
     - Hãy cho tôi xem bạn làm được gì ?
@@ -65,42 +59,106 @@ nlu:
     - tác dụng của bạn là gì
     - có tac dung gì
     - biết làm gì không
+    - Hãy cho tôi thông tin chung
+    - Các thông tin bạn có
+    - Thông tin
+    - Infomation
+    - info
+    - Gợi ý
+    - hint
+    - goi y
 
 
-- intent: dia_diem_du_lich
+- intent: chua_dalat
   examples: |
-    - nơi du lịch
+    - chùa ở Đà Lạt
+    - có những chùa nào
+    - chua da lat
+    - chùa đà lạt
+    - chua o da lat
+
+
+- intent: nha_tho_dalat
+  examples: |
+    - nhà thờ ở Đà Lạt
+    - có những nhà thờ nào
+    - nhà thờ
+    - đạo chúa nên đi đâu
+    - nha tho o da lat
+    - nha tho da lat
+    - đà lạt có nhà thờ không
+    - nhà thờ đạo chúa
+
+
+- intent: dia_diem_du_lich_truyen_thong
+  examples: |
+    - nơi du lịch truyền thống
     - địa điểm để du lịch
+    - noi co the du lich
     - địa điểm để tham quan
     - nơi để du lịch
     - chỗ tham quan
-    - nơi nên đến tham quan, du lịch, chụp hình
+    - nơi nên đến tham quan, du lịch
     - địa điểm đẹp để tham quan
 
-- intent: chon_dia_diem_du_lich
+- intent: dia_diem_checkin_trai_nghiem
   examples: |
-    - Tôi chọn Thung lũng tình yêu
-    - Tôi chọn Hồ Xuân Hương
-    - Tôi cần thông tin về Vườn hoa thành phố
+    - nơi vui chơi, giải trí
+    - nơi trải nghiệm
+    - chụp ảnh
+    - nơi để chụp ảnh
+    - noi vui choi, giai tri
+    - noi chup anh
+    - chỗ chụp hình đẹp
+    - địa điểm đẹp để vui chơi, chụp ảnh
 
-- intent: dia_diem_an_uong
+#- intent: chon_dia_diem_du_lich
+#  examples: |
+#    - Tôi chọn Thung lũng tình yêu
+#    - Tôi chọn Hồ Xuân Hương
+#    - Tôi cần thông tin về Vườn hoa thành phố
+
+- intent: trang_website
   examples: |
-    - Các địa điểm ăn uống
-    - địa điểm ăn uống
-    - chỗ ăn uống
-    - ăn uống
-    - an uong
-    - nghỉ ngơi ăn uống
-    - nơi có thể ăn uống
-    - nơi ăn uống ngon
-    - cần nơi ăn
+    - trangwebsite
+    - web
+    - web đà lat
 
-- intent: more_info_xuan_huong_lake
+#- intent: dia_diem_an_uong
+#  examples: |
+#    - Các địa điểm ăn uống
+#    - địa điểm ăn uống
+#    - chỗ ăn uống
+#    - ăn uống
+#    - an uong
+#    - nghỉ ngơi ăn uống
+#    - nơi có thể ăn uống
+#    - nơi ăn uống ngon
+#    - cần nơi ăn
+
+- intent: langbiang
+  examples: |
+    - langbiang
+    - langbiang đà lạt
+    - lang bi an
+    - lang bi ang
+    - núi langbiang
+
+- intent: gia_ve_langbiang
+  examples: |
+    - giá vé langbiang
+    - gia ve langbiang đà lạt
+    - gia ve langbiang
+    - ve langbiang bao nhieu
+    - vé langbiang như thế nào
+
+- intent: ho_xuan_huong
   examples: |
     - Tell me more Xuan Huong Lake
     - What can you tell me about Xuan Huong Lake?
     - I want info Xuan Huong Lake
     - Hồ Xuân Hương
+    - ho xuan huong
 
 - intent: thung_lung_tinh_yeu
   examples: |
@@ -114,37 +172,181 @@ nlu:
     - Vuon hoa thanh pho
     - Thông tin về Vườn hoa thành phố
 
-- intent: buoi_sang
+- intent: dinh_bao_dai
   examples: |
-    - tôi muốn ăn sáng
-    - ăn sáng
-    - an sang
-    - nơi có thể ăn sáng
-    - chỗ nào ăn sáng
-    - chỗ nào có thể ăn sáng
+    - Cho tôi biết vè dinh bảo đại
+    - dinh bao dai
+    - thông tin về dinh bao
+    - bao dai 
 
-- intent: buoi_trua
+- intent: chua_linh_phuoc
   examples: |
-    - tôi muốn ăn trưa
-    - ăn buổi trưa
-    - ăn trưa
-    - an trua
-    - nơi có thể ăn trưa
-    - nơi ăn trưa
-    - chỗ nào ăn trưa
-    - chỗ nào có thể ăn trưa
+    - Cho tôi biết về chùa linh Phước
+    - chua linh phuoc
+    - thong tin ve chua linh phuoc
+    - linh phuoc
 
-- intent: buoi_toi
+- intent: thac_Pongour
   examples: |
-    - tôi muốn ăn tối
-    - ăn buổi tối
-    - ăn tối
-    - an toi
-    - nơi có thể ăn tối
-    - nơi ăn tối
-    - chỗ nào ăn tối được
-    - chỗ nào có thể ăn tối
-    - chỗ nào ăn tối ngon
+    - Cho tôi biết về thác Pongour
+    - thac
+    - Pongour
+    - thac pôngur
+
+#- intent: vuon_hoa_da_lat
+#  examples: |
+#    - Cho tôi biết về vườn hoa đà lạt
+#    - vuon hoa da lat
+#    - thong tin vuon hoa
+#    - hoa da lat
+#
+#- intent: quan_com_ga_ba_hanh
+#  examples: |
+#    - com ga Ba hanh
+#    - Cho tôi biết về quán cơm gà 
+#    - com ga
+
+#- intent: quan_che_thanh_thao
+#  examples: |
+#    - Cho tôi biết về quán chè Thanh Thảo
+#    - che Thanh Thảo
+#    - thanh thao
+#
+#- intent: nha_hang_ngon_vila
+#  examples: |
+#    - Cho tôi biết về nhà hàng Ngon Villa
+#    - ngon villa
+#    - nhà hàng villa
+#
+#- intent: quan_an_ly_hoa_sua
+#  examples: |
+#    - Cho tôi biết về quán ăn lý hoa sữa
+#    - ly hoa sua
+#    - quán ăn lý hoa sua
+#    - quan an ly hoa sua
+#
+#- intent: banh_trang_nuong
+#  examples: |
+#    - Bánh tráng nướng đà lạt
+#    - banh trang nuong
+#    - banh trang da lat
+
+- intent: nha_tho_con_ga
+  examples: |
+    - Cho tôi biết về nhà thờ con gà
+    - nha tho con ga
+    - con ga
+
+- intent: nha_tho_domaine_de_marie
+  examples: |
+    - Cho tôi biết về nhà thờ Domaine_de_marie
+    - Doman
+    - de_marie
+    - nha tho domaine
+
+#- intent: quan_cafe_vuon
+#  examples: |
+#    - Cho tôi biết về quán cafe vuon
+#    - cafe
+#    - cafe vuon
+#    - càe vuon
+
+- intent: cung_dien_tran_le_xuan
+  examples: |
+    - Cho tôi biết về cung điện Trần Lệ Xuân
+    - Lệ Xuân
+    - tran le xuan
+    - cung dien
+
+- intent: doi_robin
+  examples: |
+    - Cho tôi biết về đồi robin
+    - robin
+    - doi robin
+
+- intent: dac_san
+  examples: |
+    - Cho tôi biết về đặc sản Đà Lạt
+    - Đặc sản
+    - Dac san
+
+- intent: nong_san
+  examples: |
+    - nông sản Đà Lạt
+    - nong san da lat
+    - nong san
+    - đà lạt có nông sản gì
+    - da lat co nong san la nhung gi
+
+- intent: dau_tay_dalat
+  examples: |
+    - Cho tôi biết về dâu tây đà lạt
+    - dâu tay
+    - dau tay
+
+- intent: atiso
+  examples: |
+    - Cho tôi biết về atiso
+    - a ti sô
+    - Đà Lạt có atiso không
+    - hãy cho tôi biết atiso Đà Lạt
+    - atiso
+
+- intent: dau_tam_da_lat
+  examples: |
+    - Cho tôi biết về dâu tằm đà lạt
+    - dâu tằm
+    - dau tam
+    - dâu tằm ở đà lạt thế nào
+    - dau tam da lat
+    - dâu tam
+
+- intent: hong_da_lat
+  examples: |
+    - Cho tôi biết về hồng đà lạt
+    - hồng đà lạt
+    - hong da lat
+    - quả hồng 
+    - hồng treo gió
+    - hong treo gio
+
+- intent: bo_da_lat
+  examples: |
+    - bơ đà lạt
+    - bo da lat
+    - bơ
+
+- intent: chuoi_da_lat
+  examples: |
+    - Chuối đà lạt
+    - chuối
+    - chuoi da lat
+
+- intent: cho_dalat
+  examples: |
+    - Cho tôi biết về chợ đà lạt
+    - cho da lat
+    - cho dem 
+    - cho dem DL
+
+- intent: hem_32
+  examples: |
+    - Cho tôi biết về Hẻm 3/2
+    - 3/2
+    - hem 3/2
+ 
+- intent: go_dalat
+  examples: |
+    - Cho tôi biết về siêu thị go đà lạt
+    - go dalat
+    - siêu thị
+    - sieu thi
+
+- intent: coopmart_dalat
+  examples: |
+    - siêu thị thực phẩm
+    - cho tôi biết về coopmart_dalat
+    - compmart
 
 - intent: chon_lai
   examples: |
@@ -156,6 +358,7 @@ nlu:
     - yêu cầu chọn lại
     - nói lại được không
     - yêu cầu lại
+    - quay lai đi
 
 - intent: affirm
   examples: |
@@ -198,40 +401,6 @@ nlu:
     - don't like that
     - no way
     - not really
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
 
 - intent: bot_challenge
   examples: |

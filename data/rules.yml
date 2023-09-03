@@ -12,10 +12,6 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-#- rule: Chung
-#  steps:
-#  - intent: genericInfo
-#  - action: utter_tourist_destination
 
 - rule: Chào hỏi
   steps:
@@ -29,8 +25,8 @@ rules:
 
 - rule: Xem thông tin Hồ Xuân Hương
   steps:
-  - intent: more_info_xuan_huong_lake
-  - action: action_more_info_xuan_huong_lake
+  - intent: ho_xuan_huong
+  - action: utter_xuan_huong
 
 - rule: Xem thông tin Vườn hoa thành phố
   steps:
@@ -42,7 +38,158 @@ rules:
   - intent: thung_lung_tinh_yeu
   - action: utter_thung_lung
 
-- rule: Chọn thời gian
+- rule: Xem giá vé Langbian
   steps:
-  - intent: dia_diem_an_uong
-  - action: utter_food_time
+  - intent: gia_ve_langbiang
+  - action: utter_gia_ve_langbiang
+
+- rule: Xem thông tin Langbian
+  steps:
+  - intent: langbiang
+  - action: utter_langbian
+
+- rule: Địa điểm du lịch truyền thống nổi tiếng
+  steps:
+  - intent: dia_diem_du_lich_truyen_thong
+  - action: utter_destination_generic
+
+- rule: Địa điểm du lịch trải nghiệm nổi tiếng
+  steps:
+  - intent: dia_diem_checkin_trai_nghiem
+  - action: utter_dia_diem_du_lich_trai_nghiem
+
+- rule: Đặc sản Đà Lạt
+  steps:
+  - intent: dac_san
+  - action: utter_thong_tin_dac_san
+
+- rule: Nông sản Đà Lạt
+  steps:
+  - intent: nong_san
+  - action: utter_nong_san_da_lat
+
+- rule: Chùa Đà Lạt
+  steps:
+  - intent: chua_dalat
+  - action: utter_thong_tin_chua
+
+- rule: Nhà thờ Đà Lạt
+  steps:
+  - intent: nha_tho_dalat
+  - action: utter_thong_tin_nha_tho
+
+- rule : Xem thông tin Dinh Bảo Đại
+  steps:
+  - intent: dinh_bao_dai
+  - action: utter_dinhbaodai
+
+- rule : Xem thông tin Chùa Linh Phuoc
+  steps:
+  - intent: chua_linh_phuoc
+  - action: utter_chualinhphuoc
+
+- rule : Xem thông tin thác Poungor
+  steps:
+  - intent: thac_Pongour
+  - action: utter_thacPongour
+
+#- rule : Xem thông tin quán cơm gà bà Hạnh
+#  steps:
+#  - intent: quan_com_ga_ba_hanh
+#  - action:  utter_quancomgaBaHanh
+#
+#- rule : Xem thông tin quán chè Thanh Thảo
+#  steps:
+#  - intent:  quan_che_thanh_thao
+#  - action:  utter_quancheThanhThao
+#
+#- rule : Xem thông tin nhà hàng ngon-Villa
+#  steps:
+#  - intent: nha_hang_ngon_vila
+#  - action: utter_nhahangngonVilla
+#
+#- rule : Xem thông tin quán ăn lý hoa sữa
+#  steps:
+#  - intent: quan_an_ly_hoa_sua
+#  - action:  utter_quananLyHoaSua
+#
+#- rule : Xem thông tin bánh tráng nướng 
+#  steps:
+#  - intent: banh_trang_nuong
+#  - action: utter_banhtrangnuong
+#
+#- rule : Xem thông tin quán cafe vuon
+#  steps:
+#  - intent: quan_cafe_vuon
+#  - action: utter_cafeVuon
+
+- rule : Xem thông tin nhà thờ con gà
+  steps:
+  - intent: nha_tho_con_ga
+  - action: utter_conga
+
+- rule : Xem thông tin nhà thờ domaine de marie
+  steps:
+  - intent: nha_tho_domaine_de_marie
+  - action: utter_domaine
+
+- rule : Xem thông tin cung điện Trần Lệ Xuân
+  steps:
+  - intent: cung_dien_tran_le_xuan
+  - action: utter_tranlexuan
+
+- rule : Xem thông tin Đồi Robin
+  steps:
+  - intent: doi_robin
+  - action: utter_robon
+
+- rule : Xem thông tin chơ đà lạt
+  steps:
+  - intent: cho_dalat
+  - action: utter_chodalat
+
+
+- rule : Xem thông tin siêu thị go Đà lạt
+  steps:
+  - intent: go_dalat
+  - action: utter_Go_DaLat
+
+- rule: Chọn trang web 
+  steps:
+  - intent: trang_website
+  - action: utter_website
+
+- rule: Đặc sản dâu tây
+  steps:
+  - intent: dau_tay_dalat
+  - action: utter_dau_tay 
+
+- rule: Đặc sản Atiso
+  steps:
+  - intent: atiso
+  - action: utter_atiso
+
+- rule: Chọn thông tin dâu tầm đà lạt
+  steps:
+  - intent: dau_tam_da_lat
+  - action: utter_dau_tam_da_lat
+
+- rule: Chọn thông tin hồng treo gió đà lạt
+  steps:
+  - intent: hong_da_lat
+  - action: utter_hong_da_lat
+
+- rule: Chọn thông tin rau củ sấy đà lạt
+  steps:
+  - intent: rau_cu_say_da_lat
+  - action: utter_rau_cu_say_da_lat
+
+- rule: Chọn thông tin bơ đà lạt
+  steps:
+  - intent: bo_da_lat
+  - action: utter_bo_da_lat
+
+- rule: Chọn thông tin chuối đà lạt
+  steps:
+  - intent: chuoi_da_lat
+  - action: utter_chuoi_da_lat

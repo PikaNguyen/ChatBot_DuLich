@@ -1,6 +1,6 @@
 recipe: default.v1
 assistant_id: 20230422-112441-objective-cache
-language: en
+language: vi
 pipeline: null
 # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
 # # If you'd like to customize it, uncomment and adjust the pipeline.
@@ -36,3 +36,5 @@ policies: null
 #     max_history: 5
 #     epochs: 100
 #     constrain_similarities: true
+middleware:
+  - name_of_your_module.ConversationCleanerMiddleware

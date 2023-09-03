@@ -2,12 +2,6 @@ version: "3.1"
 
 stories:
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
 
 - story: happy destination path
   steps:
@@ -16,31 +10,11 @@ stories:
   - intent: what_do_you_have
   - action: utter_genericInfo
   - intent: dia_diem_du_lich
-  - action: utter_destination_generic
-  - intent: chon_dia_diem_du_lich
   - action: utter_request_again
   - intent: affirm
   - action: utter_genericInfo
   - intent: deny
   - action: utter_thanks
-
-- story: happy destination_specific path
-  steps:
-  - intent: dia_diem_du_lich
-  - action: utter_destination_generic
-  - intent: chon_dia_diem_du_lich
-  - action: utter_request_again
-  - intent: deny
-  - action: utter_thanks
-
-- story: happy food path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: what_do_you_have
-  - action: utter_genericInfo
-  - intent: dia_diem_an_uong
-  - action: utter_food_time
 
 - story: yêu cầu lại
   steps:
@@ -48,29 +22,3 @@ stories:
   - action: utter_chon_lai
   - action: utter_genericInfo
 
-#- story: location_info
-#  steps:
-#  - intent: genericInfo
-#  - action: utter_locations
-#  - intent: provide_location
-#    entities:
-#    - location: "Hồ Xuân Hương"
-#    - location: "Thung lũng Tình Yêu"
-#  - action: action_location_info
-  
-- story: show tourist destination
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: more_info_xuan_huong_lake
-  - action: action_more_info_xuan_huong_lake
-#- story: show tourist destination
-#  steps:
-#  - intent: greet
-#  - action: utter_greet
-#  - intent: genericInfo
-#  - action: utter_tourist_destination
-#  - intent: more_info_xuan_huong_lake
-#  - action: action_more_info_xuan_huong_lake
-#  - intent: more_info_thung_lung_tinh_yeu
-#  - action: action_more_info_xuan_huong_lake

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="chat-container"></div>
+
+  <script>
+    function createRasaWidget() {
+      const container = document.getElementById('chat-container');
+      const widget = document.createElement('div');
+      widget.id = 'rasa-webchat';
+
+      container.appendChild(widget);
+
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js'; // Thay thế 1.x.x bằng phiên bản bạn muốn sử dụng
+      script.async = true;
+      script.onload = () => {
+        window.WebChat.default(
+          {
+            initPayload: '/greet',
+            customData: { language: 'en' },
+            socketUrl: 'http://localhost:5005',
+            title: 'ChatBot Hỗ trợ Du lịch',
+            profileAvatar: 'https://cdn-icons-png.flaticon.com/512/1698/1698535.png',
+            customUi: true,
+            attachmentUpload: false,
+            externalMessageId: false,
+            shouldTakeOverSocket: true,
+            showMessageDate: true,
+            showUserAvatar: true,
+            showAvatarForBotMessages: true,
+            hideWhenNotConnected: false,
+            customComponent: (props) => {
+              const { message } = props;
+
+              // Kiểm tra nếu tin nhắn chứa button
+              if (message.buttons && message.buttons.length > 0) {
+                const buttonsContainer = document.createElement('div');
+
+                // Hiển thị Hard Button
+                message.buttons.forEach((button) => {
+                  const hardButton = document.createElement('button');
+                  hardButton.innerHTML = button.title;
+                  hardButton.addEventListener('click', () => {
+                    // Xử lý sự kiện khi người dùng nhấn vào hard button
+                    // Ví dụ: console.log(button.title);
+                  });
+                  buttonsContainer.appendChild(hardButton);
+                });
+
+                return buttonsContainer;
+              }
+
+              // Nếu không có button, hiển thị tin nhắn bình thường
+              return window.WebChat.defaultComponents.RichMessage(props);
+            },
+          },
+          null
+        );
+        window.WebChat.send({ type: 'clear' });
+      };
+
+      container.appendChild(script);
+    }
+
+    createRasaWidget();
+  </script>
+</body>
+
+</html>

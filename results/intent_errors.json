@@ -1,0 +1,18 @@
+[
+  {
+    "text": "Gợi ý",
+    "intent": "what_do_you_have",
+    "intent_prediction": {
+      "name": "genericInfo",
+      "confidence": 0.5778719186782837
+    }
+  },
+  {
+    "text": "Tôi cần thông tin về Vườn hoa thành phố",
+    "intent": "chon_dia_diem_du_lich",
+    "intent_prediction": {
+      "name": "vuon_hoa_thanh_pho",
+      "confidence": 0.4132620096206665
+    }
+  }
+]

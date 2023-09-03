@@ -29,6 +29,7 @@
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from datetime import datetime, timedelta
 
 class ActionMoreInfoXuanHuongLake(Action):
     def name(self) -> Text:
@@ -42,3 +43,14 @@ class ActionMoreInfoXuanHuongLake(Action):
         dispatcher.utter_message(text="Hồ Xuân Hương là một hồ nước xinh đẹp nằm giữa lòng Đà Lạt. Đây là một địa điểm nổi tiếng đối với khách du lịch cũng như người dân địa phương, mang đến một bầu không khí yên bình và cảnh quan tuyệt đẹp.")
         
         return []
+
+class ConversationCleanerMiddleware:
+    def __init__(self):
+        self.last_cleanup_time = datetime.now()
+
+    def process_message(self, message, _):
+        now = datetime.now()
+        if (now - self.last_cleanup_time) > timedelta(minutes=1):
+            # Code xóa các cuộc trò chuyện cũ ở đây
+            self.last_cleanup_time = now
+        return None

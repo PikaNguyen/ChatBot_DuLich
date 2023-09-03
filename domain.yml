@@ -5,66 +5,102 @@ intents:
 - goodbye
 - affirm
 - deny
-- mood_unhappy
-- mood_greet
-- mood_great
-- genericInfo
+#- mood_unhappy
+#- mood_greet
+#- mood_great
+- bot_challenge
 - more_info_xuan_huong_lake
 - what_do_you_have
-- dia_diem_du_lich
-- dia_diem_an_uong
+#- dia_diem_an_uong
 - thung_lung_tinh_yeu
 - vuon_hoa_thanh_pho
-- buoi_sang
-- buoi_trua
-- buoi_toi
-- chon_dia_diem_du_lich
+#- buoi_sang
+#- buoi_trua
+#- buoi_toi
+- dia_diem_du_lich
+#- chon_dia_diem_du_lich
 - chon_lai
+- dinh_bao_dai
+- chua_linh_phuoc
+- thac_Pongour
+#- quan_an_ly_hoa_sua
+#- quan_cafe_vuon
+#- quan_che_thanh_thao
+#- quan_com_ga_ba_hanh
+- nha_tho_con_ga
+- cung_dien_tran_le_xuan
+- doi_robin
+- nha_tho_domaine_de_marie
+- trang_website
+- coopmart_dalat
+- go_dalat
+- cho_dalat
+- hem_32
+#- banh_trang_nuong
+#- nha_hang_ngon_vila
+- dau_tay_dalat
+- atiso
+- ho_xuan_huong
+- dac_san
+- chua_dalat
+- nha_tho_dalat
+- chuoi_da_lat
+- bo_da_lat
+- hong_da_lat
+- dau_tam_da_lat
+- rau_cu_say_da_lat
+- nong_san
+- dia_diem_du_lich_truyen_thong
+- dia_diem_checkin_trai_nghiem
+- vuon_hoa_da_lat
+- langbiang
+- gia_ve_langbiang
+
+
 
 responses:
   utter_greet:
-  - text: "Xin chào! Tôi có thể giúp gì cho bạn?"
-  - text: "Chào bạn! Bạn cần Bot giúp gì không?"
-  - text: "Xin chào!\nTôi là Bot, rất hân hạnh được trò chuyện với bạn!\n Tôi có thể giúp gì cho bạn không ?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
+  - text: "Xin chào! Tôi là Bot hỗ trợ tư vấn du lịch. Hãy gõ 'Gợi ý' hoặc 'Bắt đầu' để xem các lựa chọn"
+  - text: "Xin chào!\nTôi là Bot, rất hân hạnh được trò chuyện với bạn!\n Hãy gõ 'Bắt đầu' hoặc 'Gợi ý' nhé"
 
   utter_thung_lung:
   - text: "Thung Lũng Tình Yêu là một trong những thắng cảnh thơ mộng nhất tại Đà Lạt, cách trung tâm thành phố khoảng 5 km về phía bắc"
   utter_vuon_hoa:
   - text: "Vườn hoa thành phố Đà Lạt là một trong những địa điểm du lịch vô cùng nổi tiếng ở Đà Lạt. Phong cảnh hữu tình với địa điểm du lịch, tham quan nổi tiếng. Một trong những địa điểm mà du khách không thể bỏ qua, hãy đến Vườn hoa thành phố."
-
-  utter_goodbye:
-  - text: "Tạm biệt bạn!"
-  - text: "Bye!"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-  utter_tourist_destination:
-  - text: "The famous tourist destination in Da Lat is Xuan Huong Lake"
-    buttons:
-    - title: "More about Xuan Huong Lake"
-      payload: "/more_info_xuan_huong_lake"
   
-#  utter_botgreet:
-#  - text: "Tôi có thể giúp gì cho bạn ?"
+  utter_langbian:
+  - text: "Núi Langbiang với độ cao đạt đến 2.167 mét được biết đến là ngọn núi cao nhất gần thành phố du lịch Đà Lạt, còn được gọi là nóc nhà của Cao nguyên  (Cao nguyên Lâm Viên). \nĐối với những người yêu thích đi bộ đường dài, đây là một chuyến đi trong ngày và nửa ngày tuyệt vời cho những ai chỉ muốn ngắm cảnh đẹp từ đỉnh núi."
+    buttons:
+    - title: "Giá vé"
+      payload: "/gia_ve_langbiang"
+
+  utter_gia_ve_langbiang:
+  - text: "Giá vé vào cổng là 30.000 VNĐ/khách. \nDu khách co thể đi bộ lên Langbiang hoặc thê xe Jeep với giá 60.000 VNĐ/khách/xe.\nMỗi 1 xe Jeep có thể chứa tối đa 6 khách. Nếu du khách đi theo đoàn đông thì giá sẽ rẻ hơn nhiều."
+  
   
   utter_genericInfo:
   - text: "Tôi có thể tư vấn thông tin về du lịch Đà Lạt"
     buttons:
-    - title: "Các địa điểm du lịch nổi tiếng ở Đà Lạt"
-      payload: "/dia_diem_du_lich"
-    - title: "Các địa điểm ăn uống"
-      payload: "/dia_diem_an_uong"
+    - title: "Các địa điểm du lịch truyền thống ở Đà Lạt"
+      payload: "/dia_diem_du_lich_truyen_thong"
+    - title: "Các địa điểm du lịch check-in, trải nghiệm "
+      payload: "/dia_diem_checkin_trai_nghiem"
+    - title: "Các đặc sản Đà Lạt "
+      payload: "/dac_san"
+    - title: "Các nông sản Đà Lạt "
+      payload: "/nong_san"
+    - title: "Chùa "
+      payload: "/chua_dalat"
+    - title: "Nhà thờ"
+      payload: "/nha_tho_dalat"
+
+  utter_dia_diem_du_lich_trai_nghiem:
+  - text: "Đà Lạt có rất nhiều địa điểm du lịch, trải nghiệm nổi tiếng"
+    buttons:
+    - title: "Langbiang"
+      payload: "/langbiang"
+    #- tittle: "Đồi Robin"
+     # payload: "/doi_robin"
 
   utter_destination_generic:
   - text: "Đà Lạt có rất nhiều địa điểm du lịch nổi tiếng"
@@ -74,31 +110,246 @@ responses:
     - title: "Vườn hoa thành phố"
       payload: "/vuon_hoa_thanh_pho"
     - title: "Hồ Xuân Hương"
-      payload: "/more_info_xuan_huong_lake"
-  
-  utter_food_time:
-  - text: "Bạn muốn ăn vào lúc nào"
-    buttons:
-    - title: "Buổi sáng"
-      payload: "/buoi_sang"
-    - title: "Buổi trưa"
-      payload: "/buoi_trua"
-    - title: "Buổi tối"
-      payload: "/buoi_toi"
+      payload: "/ho_xuan_huong"
+    - title: "Dinh Bảo Đại"
+      payload: "/dinh_bao_dai"
+    - title: "Chợ Đà Lạt"
+      payload: "/cho_dalat"
 
+  utter_nong_san_da_lat:
+  - text:  
+      "Khi nhắc đến Đà Lạt thì ai trong số chúng ta cũng đều liên tưởng đến một vùng đất có khí hậu ôn hòa và rất nhiều cảnh đẹp. Và cũng không ít người sẽ nghĩ ngay đến những món đặc sản nổi tiếng của nơi đây. Trong số đó thì nông sản Đà Lạt là một trong những sản phẩm được rất nhiều người yêu mến. Nhờ vào khí hậu ôn hòa rất thích hợp để các loại rau củ quả phát triển tốt nhất. Cũng vì lẽ đó mà các loại nông sản tại Đà Lạt luôn là sự lựa chọn hàng đầu của không ít bà nội trợ. Không những thế đây cũng là sản phẩm có mật độ phân bố rộng khắp các tỉnh thành tại Việt Nam.
+        \n1. Tại sao nông sản Đà Lạt lại có độ tươi ngon đến như thế?
+        \nCó thể nói thiên nhiên đã ban tặng cho Đà Lạt một bầu không khí vô cùng mát mẻ, ôn hòa. Đây cũng chính là điều kiện để cho các loại rau củ quả tại địa phương này phát triển tươi tốt và có hương vị đặc trưng riêng. Không những thế điều kiện thổ nhưỡng và nguồn nước cũng đã giúp tạo nên thương hiệu nông sản của Đà Lạt. Chính nhờ vào 2 điều kiện này đã khiến cho nông sản trồng tại Đà Lạt có độ tươi tốt, thơm ngon hơn hẳn những địa phương khác.
+        \n2. Những lý do giúp cho nông sản Đà Lạt trở thành sự lựa chọn hàng đầu
+        \nCòn riêng đối với nông sản Đà Lạt thì luôn đảm bảo trồng và chăm sóc theo đúng tiêu chuẩn quốc tế. Chất lượng của sản phẩm luôn là tiêu chí mà những người nông dân tại Đà Lạt theo đuổi trong quá trình tạo ra các loại nông sản. Cũng chính vì thế mà khi sử dụng các loại sản phẩm nông sản từ Đà Lạt bạn hoàn toàn yên tâm về chất lượng, bởi chúng luôn mang đến những lợi ích tuyệt vời cho sức khỏe của chúng ta trong từng bữa ăn.
+        \n3. 3 loại nông sản nổi tiếng khi đến đà lạt"
+    buttons:
+    - title: "Rau củ sấy Đà Lạt"
+      payload: "/rau_cu_say_da_lat"
+    - title: "Bơ Đà Lạt"
+      payload: "/bo_da_lat"
+    - title: "Chuối Laba Đà Lạt"
+      payload: "/chuoi_da_lat"
+
+  utter_hong_da_lat:
+  - text: 
+      "Bắt nguồn từ xứ sở hoa anh đào, hồng treo gió là loại hồng được treo cao lúc quả hồng chưa chín trong vài ngày để tạo thành mứt hồng dẻo cực thơm ngon. Với cách làm khá kỳ công và lạ mắt, hồng treo gió được khá nhiều người ưa thích mua về để thưởng thức cũng như tặng người thân, bạn bè.
+      \nTrên thị trường hiện nay, hồng treo gió đang được bán với mức giá khá hợp lý dao động khoảng 280.000 đồng đến 320.000 đồng cho 1 kí.
+      \nHiện nay, có rất nhiều nơi bán hồng treo gió nhưng không biết có đảm bảo an toàn và chất lượng.
+        \nChính vì vậy, bạn nên mua hồng treo gió có nguồn gốc, ngày sản xuất rõ ràng và những địa điểm mua bán sau ở Đà Lạt và TP.HCM để nhận được những sản phẩm tốt nhất nhé.
+          \n1.L'ang Farm - Điện thoại 19009065. Địa chỉ: 128 Nguyễn Văn Cừ, phường Nguyễn Cư Trinh, Quận 1, TP.HCM
+
+          \n2.Dalavi - Điện thoại 0914.107.107. Địa chỉ: 27/6E Yersin, phường 10, thành phố Đà Lạt
+
+          \n3.Hồng sấy gió Trạm Hành. Địa chỉ: 007 Trạm Hành 1, Xã Trạm Hành, Đà Lạt"
+    image: "https://cdn.tgdd.vn/Files/2021/10/06/1388175/hong-treo-gio-da-lat-bao-nhieu-tien-mot-ki-mua-o-dau-chat-luong-an-toan-202110061206389186.jpg"
+    
+
+  utter_rau_cu_say_da_lat:
+  - text: 
+      "Chắc chẳng còn lạ gì khi đa số những ai đi chơi Đà Lạt về cũng mang theo vài túi rau củ sấy về làm quà cho gia đình và người thân. Không chỉ vì hương vị thơm ngon, mà những thành phần trong một túi rau củ sấy Đà Lạt rất đa dạng, từ mít, chuối, đậu que, khổ qua, cà rốt, khoai lang tím, khoai môn, …. rất rất nhiều. Và chúng đều là những quả rất có lợi cho sức khỏe con người.
+       \nNếu bạn có một đứa con không thích ăn rau củ và sợ thiếu chất, thì rau củ sấy sẽ là giải pháp vô cùng hữu hiệu cho bạn. Hương vị ngọt ngọt, bùi bùi, giòn tan trong miệng chính là những thứ khiến rau củ sấy Đà Lạt nổi danh trên thị trường ăn uống nước ta.
+        \nChính vì vậy, bạn nên mua rau củ sấy có nguồn gốc, ngày sản xuất rõ ràng và những địa điểm mua bán sau ở Đà Lạt và TP.HCM để nhận được những sản phẩm tốt nhất nhé.
+
+          \n1.L'ang Farm - Điện thoại 19009065. Địa chỉ: 128 Nguyễn Văn Cừ, phường Nguyễn Cư Trinh, Quận 1, TP.HCM
+
+          \n2.Dalavi - Điện thoại 0914.107.107. Địa chỉ: 27/6E Yersin, phường 10, thành phố Đà Lạt
+
+          \n3.Hồng sấy gió Trạm Hành. Địa chỉ: 007 Trạm Hành 1, Xã Trạm Hành, Đà Lạt"
+
+    image: "https://blog.muaban.net/wp-content/uploads/2019/04/nong-san-Anh-5.jpg"
+  
+  utter_bo_da_lat:
+  - text: |- 
+      - Nói đến bơ thì chắc chắn rằng ai cũng sẽ nhớ đến Đà Lạt. Nổi tiếng với bơ sáp thơm ngon hay bơ 036 trứ danh nổi tiếng cả trong và ngoài nước. Ở Đà Lạt có 3 loại bơ chính đó là bơ 036, bơ Booth7 và bơ Hass. Tuy 036 được đánh giá là ngon nhất nhưng 2 loại kia cũng không thua kém gì về chất lượng và đã trở thành loại nông sản đặc trưng vô cùng nổi tiếng của Đà Lạt.
+      - Những quả bơ tại Đà Lạt luôn có lớp vỏ sần sùi, sáng bóng, quả chắc tay và trọng lượng khá nặng. Kích thước quả lớn nhưng hạt lại nhỏ, hương vị thơm ngon, vị béo và bùi vô cùng đậm đà khiến mỗi quả bơ được mua tại đây luôn rất đáng đồng tiền.
+        Chính vì vậy, bạn nên mua rau củ sấy có nguồn gốc, ngày sản xuất rõ ràng và những địa điểm mua bán sau ở Đà Lạt và TP.HCM để nhận được những sản phẩm tốt nhất nhé.
+
+          1.L'ang Farm - Điện thoại 19009065. Địa chỉ: 128 Nguyễn Văn Cừ, phường Nguyễn Cư Trinh, Quận 1, TP.HCM
+
+          2.Dalavi - Điện thoại 0914.107.107. Địa chỉ: 27/6E Yersin, phường 10, thành phố Đà Lạt
+
+          3.Hồng sấy gió Trạm Hành. Địa chỉ: 007 Trạm Hành 1, Xã Trạm Hành, Đà Lạt
+
+    image: "https://blog.muaban.net/wp-content/uploads/2019/04/nong-san-Anh-1.jpg"
+
+  utter_chuoi_da_lat:
+  - text: |- 
+      - Chuối Laba là loại quả vô cùng nổi tiếng với lịch sử lâu dài (hơn 20 năm cắm rễ tại thành phố mộng mơ). Người dân ở đây còn kể lại rằng: từ khi khai khẩn đất hoang tại Đà Lạt nhiều người đã mang loại cây này lên đây, và vô tình quả chuối Laba tại Đà Lạt phát triển rất tốt và rất được ưa thích.
+      - Chuối Laba được xem như loại nông sản quý, vì sự bổ dưỡng của nó, quả có hương bị đậm đà, thịt dễ và rất thơm, buồng chuối khá dài, trái thon và hơi cong, màu chuối khi chín ngã vàng rất ưng mắt. 
+        Chính vì vậy, bạn nên mua rau củ sấy có nguồn gốc, ngày sản xuất rõ ràng và những địa điểm mua bán sau ở Đà Lạt và TP.HCM để nhận được những sản phẩm tốt nhất nhé.
+
+          1.L'ang Farm - Điện thoại 19009065. Địa chỉ: 128 Nguyễn Văn Cừ, phường Nguyễn Cư Trinh, Quận 1, TP.HCM
+
+          2.Dalavi - Điện thoại 0914.107.107. Địa chỉ: 27/6E Yersin, phường 10, thành phố Đà Lạt
+
+          3.Hồng sấy gió Trạm Hành. Địa chỉ: 007 Trạm Hành 1, Xã Trạm Hành, Đà Lạt
+
+    image: "https://blogcdn.muaban.net/wp-content/uploads/2019/04/nong-san-Anh-2.jpg"
+
+
+  utter_thong_tin_dac_san:
+  - text: "Đặc sản Đà Lạt làm quà là những món ngon nổi tiếng vô cùng hấp dẫn. Không chỉ ở Việt Nam mà ngay cả những khách nước ngoài cũng đều muốn thử qua. Nếu du khách muốn mua được những loại đặc sản ở Đà Lạt ngon. Du khách có thể tìm hiểu những sự lựa chọn dưới đây"
+    buttons:
+    - title: "Dâu tây"
+      payload: "/dau_tay_dalat"
+    - title: "Cây Atiso "
+      payload: "/atiso"
+    - title: "Dâu tằm đà lạt"
+      payload: "/dau_tam_da_lat"
+    - title: "Hồng treo gió đà lạt"
+      payload: "/hong_da_lat"
+
+  utter_thong_tin_nha_tho:
+  - text: "Các nhà thờ ở Đà Lạt"
+    buttons:
+    - title: "Nhà thờ con gà"
+      payload: "/nha_tho_con_ga"
+    - title: "Nhà thờ Domaine "
+      payload: "/nha_tho_domaine_de_marie"
+
+  utter_thong_tin_chua:
+  - text: "Các chùa ở Đà Lạt"
+    buttons:
+    - title: "Chùa Linh Phước"
+      payload: "/chua_linh_phuoc"
 
   utter_request_again:
   - text: "Bạn cần thông tin gì nữa không"
   utter_thanks:
   - text : "Rất hân hạnh khi hỗ trợ bạn <3 !"
   utter_chon_lai:
-  - text: "Rất sẵn lòng ^_^ "
+  - text: "Rất sẵn lòng "
 
-actions: 
- - action_more_info_xuan_huong_lake
+  utter_dinhbaodai:
+  - text: "Dinh Bảo Đại được xây dựng vào những năm 1930 và là nơi sinh sống của Hoàng đế cuối cùng của triều đại Nguyễn. Hiện nay, dinh Bảo Đại là một điểm tham quan phổ biến cho du khách, nơi để tìm hiểu về lịch sử và văn hóa của Đà Lạt."
+    image: "https://disantrangan.vn/wp-content/uploads/2021/09/dinh_bao_dai_da_lat_05.jpg"
+ 
+  utter_chualinhphuoc:
+  - text: "Chùa Linh Phước là một ngôi chùa cổ kính được xây dựng từ những năm 1949, nằm cách trung tâm thành phố Đà Lạt khoảng 8km về phía đông nam
+          \nChùa có kiến trúc độc đáo và được trang trí bằng những tảng đá đa màu sắc, thu hút nhiều du khách đến tham quan
+          \nLà một ngôi chùa cổ kính được xây dựng từ những năm 1949, nằm cách trung tâm thành phố Đà Lạt khoảng 8km về phía đông nam. Chùa có kiến trúc độc đáo và được trang trí bằng những tảng đá đa màu sắc, thu hút nhiều du khách đến tham quan"
+    image: "https://dalatcamping.net/wp-content/uploads/2022/11/Chua-Linh-Phuoc-Da-Lat-o-dau.jpg"
+  
+  utter_thacPongour:
+  - text: "Thác Pongour là một thác nước đẹp và imposant nằm khoảng 50km về phía nam của Đà Lạt
+          \nThác Pongngour là một trong những thác nước đẹp nhất ở Đông Nam Á với chiều cao 40m và chiều rộng 100m
+          \nNằm ở Địa chỉ : Thôn Tân Nghĩa- X. Ninh Gia- H. Đức Trọng – T. Lâm Đồng.Thác Pongour là một trong những thác nước đẹp nhất ở Đông Nam Á với chiều cao 40m và chiều rộng 100m "
 
+  utter_vuonHoa:
+  - text: "Vườn hoa Thành Phố là một vườn hoa lớn và đẹp, nằm tại trung tâm thành phố Đà Lạt. Vườn hoa Đà Lạt có nhiều loại hoa đẹp, được trang trí đẹp mắt và là nơi lý tưởng để chụp ảnh"
+    image: "https://dichoithoi.com/diem-den/vuon-hoa-tp-da-lat.jpg"
+ 
+  utter_xuan_huong:
+  - text: "Hồ Xuân Hương là một hồ nước đẹp thuộc Phường 01, ngay trung tâm thành phố Đà Lạt.\n Xung quanh hồ có rừng thông và các bãi cỏ, vườn hoa. Đây là địa điểm du khách ưa thích đi dạo bộ hoặc xe ngựa khi đến tham quan thành phố Đà Lạt.
+\nHồ Xuân Hương là hồ nhân tạo, có chu vi chừng 5 km, rộng 25ha, có hình trăng lưỡi liềm kéo dài hơn 2 km đi qua nhiều địa danh du lịch của thành phố Đà Lạt như: Vườn hoa thành phố, Công viên Yersin, Đồi Cù, Quảng trường Lâm Viên."
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Xuan_Huong_Lake_08.jpg/1280px-Xuan_Huong_Lake_08.jpg"
+  utter_quancomgaBaHanh:
+  - text: "là quán cơm gà nổi tiếng và được yêu thích ở Đà Lạt, nơi đây có nhiều món ăn ngon như cơm gà, gà chiên giòn, bánh canh, nui..."
 
+  utter_quancheThanhThao:
+  - text: "Quán chè Thanh Thảo là quán chè đặc trưng ở Đà Lạt, quán có nhiều loại chè đặc sản như chè khoai lang, chè đỗ đen, chè đậu xanh, chè sen..."
 
+  utter_nhahangngonVilla:
+  - text: "là một nhà hàng cao cấp, phục vụ các món ăn Á và Âu, có không gian sang trọng, tuyệt đẹp, đặc biệt là từ nhà hàng có thể ngắm nhìn toàn cảnh Đà Lạt."
+
+  utter_quananLyHoaSua:
+  - text: "là quán ăn đặc sản ở Đà Lạt, nổi tiếng với các món ăn ngon như bánh canh ghẹ, bún riêu, bún bò, nem nướng,..."
+
+  utter_banhtrangnuong:
+  - text: "Bánh tráng nướng là món ăn đặc sản được nhiều du khách yêu thích ở Đà Lạt. Bánh tráng nướng Đà Lạt có hương vị độc đáo, thơm ngon và được chế biến trên đĩa nướng đặc biệt trên than hoa."
+    image: "https://phongnhaexplorer.com/wp-content/uploads/2021/08/banh-trang-nuong-da-lat-e.jpg"
+  
+  utter_dau_tay:
+  - text: |- 
+      - Dâu tây Đà Lạt là đặc sản mà bất cứ du khách nào cũng muốn mua làm quà cho người thân mỗi lần đến với Đà Lạt. Dâu tây rất dễ “chiều lòng” người nhận bởi sự đa dạng hiếm có: Nào là có thể ăn tươi, lắc với đường hoặc muối, làm mứt dâu, làm đẹp hay là xay sinh tố, ép nước uống…
+        Dâu tây Đà Lạt từ lâu đã trở thành “đặc sản” mà bất cứ ai cũng đều mặc định mua làm quà mỗi lần ghé thăm Đà Lạt. Khí hậu, thổ nhưỡng tại thành phố Cao Nguyên này cho chất lượng cũng như mùi vị trái dâu rất đặc biệt. Hiện nay, tại Đà Lạt có khá nhiều giống dâu tây được trồng (cả ngoài trời và canh tác trong nhà kính), Dalavi trân trọng mang đến cho quý khách hàng giống dâu được nhiều người lựa chọn nhất hiện nay: Dâu tây Đà Lạt giống Mỹ Đá. Dâu tây được DaLaVi chia thành 04 loại:
+        - Size A (trung bình 80 trái/kg), giá lẻ: 280.000đ
+        - Size B (trung bình 95 trái/kg), giá lẻ: 230.000đ
+        - Size C (trung bình 120 trái/kg), giá lẻ: 190.000đ
+        - Quy cách đóng: Dâu A, B – 1kg/hộp; Dâu C: 3kg/hộp
+        - Mua sỉ, vui lòng truy cập: https://dautaydalat.vn/dau-tay-da-lat-gia-si
+    image: "https://dacsandalat.com.vn/wp-content/uploads/2017/05/z1270464562788_1f043e397ace4267bef62a839ec15c2b.jpg"
+
+  utter_atiso:
+  - text: |- 
+      - Cây atiso là một loại cây có gai lâu năm có nguồn gốc miền Nam Châu Âu hiện ở Việt Nam Atiso được trồng nhiều ở Đà lạt, Sapa, Tam Đảo. Thực chất, đây được coi là một cây thuốc quý. Bởi lẽ hầu hết các bộ phận của cây Atiso như rễ, lá, thân, hoa,.. đều có thể sử dụng một cách có ích với sức khỏe con người như trà thảo mộc, các món ăn, thảo dược,…
+      Thời tiết ở Đà Lạt mát mẻ, đất đai màu mỡ lại có những phương pháp canh tác tiên tiến nên trồng cây atiso bội thu và người dân ở đây sử dụng atiso để chế biến ra rất nhiều loại sản phẩm như: mứt, trà, cao,…đều mang đến những lợi ích tốt cho sức khỏe.
+      - Nhắc đến Đà Lạt, ngoài cảnh sắc thiên nhiên thơ mộng thì thành phố sương mù này còn có những món quà đặc sản tuy đơn giản nhưng thu hút khách du lịch. Trong đó trà atiso Đà Lạt là sản phẩm nổi tiếng được đông đảo du khách biết đến nhất. Nhưng mua ở đâu để có được những túi trà atiso nguyên chất, chất lượng mà giá cả lại phải chăng?
+        1.Ladophar là đơn vị nổi tiếng có các cửa hàng lớn có mặt trên nhiều tỉnh thành tại Việt Nam. Trà Atiso Đà Lạt Ladophar được sản xuất từ 100% atiso tự nhiên, không pha tạp, không chất bảo quản, trải qua quá trình phơi sấy, đóng gói hiện đại, đảm bảo chất lượng vệ sinh an toàn thực phẩm. Bạn có thể tới địa chỉ gần nhất ở thành phố Đà Lạt để mua trà atiso ngon. Địa chỉ cụ thể mà bạn có thể tới ngay nếu ở Đà Lạt là số 18 Ngô Quyền, thành phố Đà Lạt.
+        2.Trà atiso Vĩnh Tiến
+        Thương hiệu này là một địa chỉ sản xuất trà Atiso nổi tiếng ở Đà Lạt trong nhiều năm qua, được người tiêu dùng biết đến, ưa chuộng và đánh giá cao về chất lượng. Ở đây có nhiều loại trà atiso cho khách hàng lựa chọn như trà atiso dạng túi, dạng đóng chai, cao atiso, Atiso bột, Atiso hòa tan, Bông Atiso sấy khô…Người tiêu dùng đánh giá chất lượng trà ở đây ngon, sạch sẽ, tốt cho sức khỏe và hương vị thì miễn chê. 
+        3.Trà atiso L’angfarm
+        Hiện nay, L’angfarm là chuỗi các cửa hàng bán đặc sản Đà Lạt uy tín, chất lượng, là thương hiệu đặc sản Đà Lạt hàng đầu, cung cấp sản phẩm nông sản chế biến chất lượng cao, an toàn, tin cậy, phải chăng, đẹp mắt, hài lòng. Riêng ở thành phố Đà Lạt đã có nhiều nơi để bạn ghé vào mua trà atiso như ở Số 6 Nguyễn Thị Minh Khai, Phường 1, thành phố Đà Lạt và nó cũng có một hệ thống các cửa hàng rải rác khắp đất nước bạn có thể dễ dàng ghé mua. 
+    image: "https://reviewvilla.vn/wp-content/uploads/2022/05/Tra-atiso-Da-Lat-12-2.jpg"
+ 
+
+  utter_dau_tam_da_lat:
+  - text: |- 
+      - Dâu tằm là cái tên rất đỗi quen thuộc với mỗi người dân Việt Nam. Dâu tằm thường xuất hiện vào cuối Xuân đầu Hạ, rơi vào cuối tháng 3 đầu tháng 4 hàng năm. Cây được trồng khắp nơi trong nước ta lấy lá nuôi tằm, làm thuốc. Ở miền Bắc, dâu được trồng nhiều ở ngoài bãi sông: sông Hồng, sông Đáy, sông Thái Bình. Ở miền Nam, dâu được trồng nhiều ở tỉnh Lâm Đồng, ngày nay dâu tằm Đà Lạt đã trở nên nổi tiếng: Là nông sản tươi được nhiều đối tác lớn đặt hàng bởi nhiều công dụng mà loại cây này mang lại.
+        Dâu tằm tươi được canh tác đạt chuẩn, cho năng suất cao. Quy trình hái dâu, phân loại và đóng gói chuyên nghiệp giúp sản phẩm đến được với hầu hết các tỉnh thành tại Việt Nam. 
+        - Dâu tằm tươi: 70.000đ/kg, tối thiểu 6kg
+        - Hũ dâu tằm sơ chế: chỉ việc dùng (ngâm rượu, ngâm đường, ăn sống…)
+        - Hũ dâu tằm ngâm đường: 5kg, 4kg, 3kg hoặc theo yêu cầu
+        - Vùng trồng: Đức Trọng, Đà Lạt, Lạc Dương
+        Công dụng của dâu tằm:
+        - Sở dĩ gọi dâu tằm là “tiên dược” bởi hiếm có loại cây nào như dâu tằm có thể ứng dụng hầu hết các bộ phận của cây vào việc chữa bệnh. Cụ thể:
+        - Vỏ rễ dâu có khả năng chữa ho, ho ra máu, phù thũng, đi tiểu ít… bằng cách dùng 4 – 12g cho vào sắc để uống mỗi ngày.
+        - Lá dâu có thể chữa cảm mạo, ho, họng đau, nhức đầu, mắt đỏ, chảy nước mắt, phát ban, huyết áp cao, mồ hôi trộm. Ngày dùng 4 – 12g, dạng thuốc sắc.
+        - Cành dâu non cũng được dùng để chữa tê thấp, chân tay co quắp. Ngày dùng 20 – 40g, dạng thuốc sắc.
+        - Quả dâu tằm có khả năng chữa bệnh tiểu đường, lao hạch, mắt mờ, ù tai, thiếu máu. Nước quả Dâu cô thành cao. Ngày uống 3 lần, mỗi lần 5g. Liều dùng từ 12 – 20g.
+        - Đặc biệt, các bộ phận tưởng vô dụng như tầm gửi trên cây dâu cũng có thể trị các chứng phong thấp, tê bại, đau lưng, mỏi gối. Trị động thai, đau bụng. Ngày dùng 12-20g.
+        - Mua sỉ, vui lòng truy cập: https://dautamdalat.com/san-pham/dau-tam-tuoi/
+    image: "https://dautamdalat.com/wp-content/uploads/2020/03/dau-tam-tuoi-da-lat.jpg"
+  
+ 
+  utter_cafeVuon:
+  - text: "Cafe Vườn là quán cafe yên tĩnh, có không gian rộng, được trang trí đẹp mắt với không gian mở, tạo cảm giác thư giãn, được nhiều du khách yêu thích để thưởng thức cafe và tán gẫu."
+  utter_conga:
+  - text: ":Là một công trình kiến trúc độc đáo tại Đà Lạt, được xây dựng vào những năm 1930. Nhà thờ có kiến trúc theo phong cách Gothic, với tòa nhà được xây dựng từ gỗ, đá và ngói."
+    image: "https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/01/nha-tho-con-ga-2.png"
+
+  utter_domaine:
+  - text: "Là một nhà thờ kiến trúc độc đáo, được xây dựng vào những năm 1940 bởi các nữ tu của Dòng Mến Thánh Giá. Nhà thờ có kiến trúc Pháp, với tường đá và cửa sổ đơn giản."
+    image: "https://nhathoconggiao.com/wp-content/hinh-nha-tho/files/l_df386e521956a468e3222b2d89848683.jpg"
+
+  utter_tranlexuan:
+  - text: "Cung điện Trần Lệ Xuân, còn được gọi là Cung điện Hòa Bình, được xây dựng vào những năm 1950. Đây là nơi sinh sống của Công nương Nam Phương và cũng là nơi để tìm hiểu về lịch sử và văn hóa của Đà Lạt."
+    image: "https://img.360dalat.com/resize/730x-/2020/11/02/biet-dien-tran-le-xuan-9ce0.jpg"
+
+  utter_robon:
+  - text: "Đây là một địa điểm du lịch phổ biến, nơi du khách có thể tìm hiểu về lịch sử của Đà Lạt và cảnh quan thiên nhiên đẹp. Đồi Robin có nhiều công trình kiến trúc cổ, bao gồm một nhà máy thủy điện cũ, những ngôi nhà cổ và một bảo tàng.\n Vé cáp treo Đà Lạt khứ hồi cho người lớn: 100.000 VND/khứ hồi; vé trẻ em cao dưới 1,2m: 70.000 VND/khứ hồi.\n + Vé cáp treo Đà Lạt 1 chiều cho người lớn: 80.000 VND/Vé; vé trẻ em cao dưới 1,2m: 60.000 VND/Vé."
+    image: "https://go2joy.s3.ap-southeast-1.amazonaws.com/blog/wp-content/uploads/2022/04/18105731/doi-robin-da-lat-o-dau.jpg"
+
+  utter_chodalat:
+  - text: "Là trung tâm mua sắm lớn nhất của thành phố, tại đây du khách có thể tìm thấy các sản phẩm địa phương như trái cây, rau củ, hoa quả khô, đặc sản, quần áo, phụ kiện và đồ thủ công mỹ nghệ"
+    image: "https://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com/2079950896-1669026633891.jpg"
+    
+  utter_Go_DaLat:
+  - text: "Là một siêu thị lớn tại Đà Lạt, cung cấp đầy đủ các loại hàng hóa, từ thực phẩm đến thiết bị gia dụng và quần áo"
+    image: "https://www.bigc.vn/files/images/store2/go-da-lat.jpeg"
+  
+  utter_website:
+  - text: "Những trang web về du lịch đà lạt"
+    buttons:
+    - title: "vietnamtourism.com https://vietnamtourism.com.vn/"
+      payload: "https://vietnamtourism.com.vn/"
+    - title: "dalatcity.org https://dalat.vn/"
+      payload: "https://dalat.vn/"
+    - title: "dulichdalat.pro https://dulichdalat.pro/"
+      payload: "https://dulichdalat.pro/"
+    - title: "dalat.travel https://dalat.travel/"
+      payload: "https://dalat.travel/"
+    - title: "vietnamonline.com https://www.vietnamonline.com/"
+      payload: "https://www.vietnamonline.com/"
+
+  utter_goodbye:
+  - text: "Tạm biệt bạn!"
+  - text: "Bye!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
 
 
 
